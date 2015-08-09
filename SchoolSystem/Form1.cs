@@ -12,6 +12,7 @@ namespace SchoolSystem
 {
     public partial class Form1 : Form
     {
+        static SchoolSystemEntities1 database = new SchoolSystemEntities1();
         public Form1()
         {
             InitializeComponent();
@@ -19,30 +20,24 @@ namespace SchoolSystem
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (treeView1.SelectedNode.Name.Equals("btn_Class_Wise_Strngth"))
-            {
-                TableLayoutPanel result = new TableLayoutPanel();
-                result.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-                this.splitContainer1.Panel2.AutoScroll = true;
-                result.AutoScroll = true;
-                result.ColumnCount = 3;
-                result.RowCount = 2;
-                result.Dock = System.Windows.Forms.DockStyle.Fill;
-                result.Controls.Add(new Label() { Text = "Class" }, 0, 0);
-                result.Controls.Add(new Label() { Text = "Section" }, 1, 0);
-                result.Controls.Add(new Label() { Text = "Number_Of_Students" }, 2, 0);
-
-                for (int i = 0; i < 50; i++)
+            { 
+                ClassWiseStrength ReportResult = new ClassWiseStrength();
+                int RowNnumberTrace = 0;
+                List<Class> AllClasses = database.Classes.ToList();
+                AllClasses.Sort();
+                foreach (Class c in AllClasses)
                 {
-                    result.RowCount++;
-                    result.Controls.Add(new Label() { Text = "5th" }, 0, 1);
-                    result.Controls.Add(new Label() { Text = "A" }, 1, 1);
-                    result.Controls.Add(new Label() { Text = "40" }, 2, 1);
+                    foreach(Section s in c.Sections)
+                    {
+                        ReportResult.tableLayoutPanel1.RowCount++;
+                        ReportResult.tableLayoutPanel1.Controls.Add(new Label { Text = s.Class.Name} , 0, RowNnumberTrace);
+                        ReportResult.tableLayoutPanel1.Controls.Add(new Label { Text = s.Title }, 1, RowNnumberTrace);
+                        ReportResult.tableLayoutPanel1.Controls.Add(new Label { Text = s.Students.Count.ToString() }, 2, RowNnumberTrace);
+                        RowNnumberTrace++;
+                    }
                 }
-
-                result.RowCount++;
-                result.Controls.Add(new Button() { Text = "Export To PDF", AutoSize = true }, 2, result.RowCount - 1);
                 this.splitContainer1.Panel2.Controls.Clear();
-                this.splitContainer1.Panel2.Controls.Add(result);
+                this.splitContainer1.Panel2.Controls.Add(ReportResult);
             }
             else if(treeView1.SelectedNode.Name.Equals("btn_New_Admission"))
             {
