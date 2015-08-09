@@ -7,3 +7,8 @@ C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\Schoo
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.csproj.GenerateResource.Cache
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.exe
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.pdb
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.ClassWiseStrength.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.dll
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.xml
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.SqlServer.xml
