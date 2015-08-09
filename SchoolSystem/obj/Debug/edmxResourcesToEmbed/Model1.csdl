@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Attandance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AttandanceDate" Type="DateTime" Precision="3" />
+    <Property Name="StudentID" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_Attandance_Student" FromRole="Attandance" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Challan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SId" Type="Int32" />
+    <Property Name="IssueDate" Type="DateTime" Precision="3" />
+    <Property Name="DueDate" Type="DateTime" Precision="3" />
+    <Property Name="Amount" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="PaidDate" Type="DateTime" Precision="3" />
+    <Property Name="PaidFlag" Type="Boolean" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_Challan_Student" FromRole="Challan" ToRole="Student" />
+    <NavigationProperty Name="ChallanToFeeHeads" Relationship="Self.FK_ChallanToFeeHeads_Challan" FromRole="Challan" ToRole="ChallanToFeeHeads" />
+  </EntityType>
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Courses" Relationship="Self.FK_Course_Class" FromRole="Class" ToRole="Course" />
+    <NavigationProperty Name="Sections" Relationship="Self.FK_Section_Class" FromRole="Class" ToRole="Section" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClassId" Type="Decimal" Precision="20" Scale="0" />
+    <NavigationProperty Name="Class" Relationship="Self.FK_Course_Class" FromRole="Course" ToRole="Class" />
+    <NavigationProperty Name="Exams" Relationship="Self.FK_Exam_Course" FromRole="Course" ToRole="Exam" />
+  </EntityType>
+  <EntityType Name="Exam">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExamTypeId" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="ExamSectionId" Type="Int32" />
+    <Property Name="CourseId" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="TotalMarks" Type="Int32" />
+    <NavigationProperty Name="Course" Relationship="Self.FK_Exam_Course" FromRole="Exam" ToRole="Course" />
+    <NavigationProperty Name="ExamType" Relationship="Self.FK_Exam_ExamType" FromRole="Exam" ToRole="ExamType" />
+    <NavigationProperty Name="Section" Relationship="Self.FK_Exam_Section" FromRole="Exam" ToRole="Section" />
+    <NavigationProperty Name="ExamResults" Relationship="Self.FK_ExamResults_Exam" FromRole="Exam" ToRole="ExamResults" />
+  </EntityType>
+  <EntityType Name="ExamResult">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExamId" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="StudentId" Type="Int32" />
+    <Property Name="ObtainedMarks" Type="Int32" />
+    <NavigationProperty Name="Exam" Relationship="Self.FK_ExamResults_Exam" FromRole="ExamResults" ToRole="Exam" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_ExamResults_Student" FromRole="ExamResults" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="ExamType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Exams" Relationship="Self.FK_Exam_ExamType" FromRole="ExamType" ToRole="Exam" />
+  </EntityType>
+  <EntityType Name="FeeHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Type" Type="Int32" />
+    <NavigationProperty Name="ChallanToFeeHeads" Relationship="Self.FK_ChallanToFeeHeads_FeeHeads" FromRole="FeeHeads" ToRole="ChallanToFeeHeads" />
+    <NavigationProperty Name="StudentToFeeHeads" Relationship="Self.FK_StudentToFeeHeads_FeeHeads" FromRole="FeeHeads" ToRole="StudentToFeeHeads" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="20" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MaxValue" Type="Int32" />
+    <Property Name="MinValue" Type="Int32" />
+  </EntityType>
+  <EntityType Name="MonthlyType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="January" Type="Boolean" />
+    <Property Name="Feburary" Type="Boolean" />
+    <Property Name="March" Type="Boolean" />
+    <Property Name="April" Type="Boolean" />
+    <Property Name="May" Type="Boolean" />
+    <Property Name="June" Type="Boolean" />
+    <Property Name="July" Type="Boolean" />
+    <Property Name="August" Type="Boolean" />
+    <Property Name="September" Type="Boolean" />
+    <Property Name="October" Type="Boolean" />
+    <Property Name="November" Type="Boolean" />
+    <Property Name="December" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClassId" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Class" Relationship="Self.FK_Section_Class" FromRole="Section" ToRole="Class" />
+    <NavigationProperty Name="Exams" Relationship="Self.FK_Exam_Section" FromRole="Section" ToRole="Exam" />
+    <NavigationProperty Name="Students" Relationship="Self.FK_Student_Section" FromRole="Section" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RollNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FatherName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="3" />
+    <Property Name="SectionId" Type="Int32" />
+    <Property Name="AdmissionDate" Type="DateTime" Precision="3" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Religion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="Attandances" Relationship="Self.FK_Attandance_Student" FromRole="Student" ToRole="Attandance" />
+    <NavigationProperty Name="Challans" Relationship="Self.FK_Challan_Student" FromRole="Student" ToRole="Challan" />
+    <NavigationProperty Name="ExamResults" Relationship="Self.FK_ExamResults_Student" FromRole="Student" ToRole="ExamResults" />
+    <NavigationProperty Name="Section" Relationship="Self.FK_Student_Section" FromRole="Student" ToRole="Section" />
+    <NavigationProperty Name="StudentToFeeHeads" Relationship="Self.FK_StudentToFeeHeads_Student" FromRole="Student" ToRole="StudentToFeeHeads" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FatherName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="JoinDate" Type="DateTime" Precision="3" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="martialStatus" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="WeeklyType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstWeek" Type="Boolean" />
+    <Property Name="SecondWeek" Type="Boolean" />
+    <Property Name="ThirdWeek" Type="Boolean" />
+    <Property Name="ForthWeek" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ChallanToFeeHead">
+    <Key>
+      <PropertyRef Name="HeadId" />
+      <PropertyRef Name="ChallanId" />
+    </Key>
+    <Property Name="HeadId" Type="Int32" Nullable="false" />
+    <Property Name="ChallanId" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="20" Scale="0" />
+    <NavigationProperty Name="Challan" Relationship="Self.FK_ChallanToFeeHeads_Challan" FromRole="ChallanToFeeHeads" ToRole="Challan" />
+    <NavigationProperty Name="FeeHead" Relationship="Self.FK_ChallanToFeeHeads_FeeHeads" FromRole="ChallanToFeeHeads" ToRole="FeeHeads" />
+  </EntityType>
+  <EntityType Name="StudentToFeeHead">
+    <Key>
+      <PropertyRef Name="HeadId" />
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="HeadId" Type="Int32" Nullable="false" />
+    <Property Name="StudentId" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="20" Scale="0" />
+    <NavigationProperty Name="FeeHead" Relationship="Self.FK_StudentToFeeHeads_FeeHeads" FromRole="StudentToFeeHeads" ToRole="FeeHeads" />
+    <NavigationProperty Name="Student" Relationship="Self.FK_StudentToFeeHeads_Student" FromRole="StudentToFeeHeads" ToRole="Student" />
+  </EntityType>
+  <Association Name="FK_Attandance_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Attandance" Type="Self.Attandance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Attandance">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Challan_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Challan" Type="Self.Challan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Challan">
+        <PropertyRef Name="SId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChallanToFeeHeads_Challan">
+    <End Role="Challan" Type="Self.Challan" Multiplicity="1" />
+    <End Role="ChallanToFeeHeads" Type="Self.ChallanToFeeHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Challan">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChallanToFeeHeads">
+        <PropertyRef Name="ChallanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Course_Class">
+    <End Role="Class" Type="Self.Class" Multiplicity="0..1" />
+    <End Role="Course" Type="Self.Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Section_Class">
+    <End Role="Class" Type="Self.Class" Multiplicity="0..1" />
+    <End Role="Section" Type="Self.Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Section">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exam_Course">
+    <End Role="Course" Type="Self.Course" Multiplicity="0..1" />
+    <End Role="Exam" Type="Self.Exam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exam">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exam_ExamType">
+    <End Role="ExamType" Type="Self.ExamType" Multiplicity="0..1" />
+    <End Role="Exam" Type="Self.Exam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExamType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exam">
+        <PropertyRef Name="ExamTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exam_Section">
+    <End Role="Section" Type="Self.Section" Multiplicity="0..1" />
+    <End Role="Exam" Type="Self.Exam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Section">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exam">
+        <PropertyRef Name="ExamSectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExamResults_Exam">
+    <End Role="Exam" Type="Self.Exam" Multiplicity="0..1" />
+    <End Role="ExamResults" Type="Self.ExamResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exam">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ExamResults">
+        <PropertyRef Name="ExamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExamResults_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="ExamResults" Type="Self.ExamResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ExamResults">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChallanToFeeHeads_FeeHeads">
+    <End Role="FeeHeads" Type="Self.FeeHead" Multiplicity="1" />
+    <End Role="ChallanToFeeHeads" Type="Self.ChallanToFeeHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FeeHeads">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChallanToFeeHeads">
+        <PropertyRef Name="HeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentToFeeHeads_FeeHeads">
+    <End Role="FeeHeads" Type="Self.FeeHead" Multiplicity="1" />
+    <End Role="StudentToFeeHeads" Type="Self.StudentToFeeHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FeeHeads">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentToFeeHeads">
+        <PropertyRef Name="HeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_Section">
+    <End Role="Section" Type="Self.Section" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Section">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentToFeeHeads_Student">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="StudentToFeeHeads" Type="Self.StudentToFeeHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="StudentToFeeHeads">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SchoolSystemEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Attandances" EntityType="Self.Attandance" />
+    <EntitySet Name="Challans" EntityType="Self.Challan" />
+    <EntitySet Name="Classes" EntityType="Self.Class" />
+    <EntitySet Name="Courses" EntityType="Self.Course" />
+    <EntitySet Name="Exams" EntityType="Self.Exam" />
+    <EntitySet Name="ExamResults" EntityType="Self.ExamResult" />
+    <EntitySet Name="ExamTypes" EntityType="Self.ExamType" />
+    <EntitySet Name="FeeHeads" EntityType="Self.FeeHead" />
+    <EntitySet Name="Grades" EntityType="Self.Grade" />
+    <EntitySet Name="MonthlyTypes" EntityType="Self.MonthlyType" />
+    <EntitySet Name="Sections" EntityType="Self.Section" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Teachers" EntityType="Self.Teacher" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="WeeklyTypes" EntityType="Self.WeeklyType" />
+    <EntitySet Name="ChallanToFeeHeads" EntityType="Self.ChallanToFeeHead" />
+    <EntitySet Name="StudentToFeeHeads" EntityType="Self.StudentToFeeHead" />
+    <AssociationSet Name="FK_Attandance_Student" Association="Self.FK_Attandance_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Attandance" EntitySet="Attandances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Challan_Student" Association="Self.FK_Challan_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Challan" EntitySet="Challans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChallanToFeeHeads_Challan" Association="Self.FK_ChallanToFeeHeads_Challan">
+      <End Role="Challan" EntitySet="Challans" />
+      <End Role="ChallanToFeeHeads" EntitySet="ChallanToFeeHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Course_Class" Association="Self.FK_Course_Class">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Section_Class" Association="Self.FK_Section_Class">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="Section" EntitySet="Sections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exam_Course" Association="Self.FK_Exam_Course">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Exam" EntitySet="Exams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exam_ExamType" Association="Self.FK_Exam_ExamType">
+      <End Role="ExamType" EntitySet="ExamTypes" />
+      <End Role="Exam" EntitySet="Exams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exam_Section" Association="Self.FK_Exam_Section">
+      <End Role="Section" EntitySet="Sections" />
+      <End Role="Exam" EntitySet="Exams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExamResults_Exam" Association="Self.FK_ExamResults_Exam">
+      <End Role="Exam" EntitySet="Exams" />
+      <End Role="ExamResults" EntitySet="ExamResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExamResults_Student" Association="Self.FK_ExamResults_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="ExamResults" EntitySet="ExamResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChallanToFeeHeads_FeeHeads" Association="Self.FK_ChallanToFeeHeads_FeeHeads">
+      <End Role="FeeHeads" EntitySet="FeeHeads" />
+      <End Role="ChallanToFeeHeads" EntitySet="ChallanToFeeHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentToFeeHeads_FeeHeads" Association="Self.FK_StudentToFeeHeads_FeeHeads">
+      <End Role="FeeHeads" EntitySet="FeeHeads" />
+      <End Role="StudentToFeeHeads" EntitySet="StudentToFeeHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_Section" Association="Self.FK_Student_Section">
+      <End Role="Section" EntitySet="Sections" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentToFeeHeads_Student" Association="Self.FK_StudentToFeeHeads_Student">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="StudentToFeeHeads" EntitySet="StudentToFeeHeads" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
