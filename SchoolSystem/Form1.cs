@@ -46,11 +46,7 @@ namespace SchoolSystem
             }
             else if(treeView1.SelectedNode.Name.Equals("btn_New_Admission"))
             {
-                MessageBox.Show("Hello");
-                this.splitContainer1.Panel2.Controls.Clear();
-                UserControl AdmissionForm = new UserControl();
-                AdmissionForm.Show();
-                this.splitContainer1.Panel2.Controls.Add(AdmissionForm);
+
             }
         }
     }
