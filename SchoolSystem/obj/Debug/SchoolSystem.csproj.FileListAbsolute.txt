@@ -12,3 +12,10 @@ C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\Schoo
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.xml
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.AbsentReport.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.AttandanceScreen.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.CharacterCertificate.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.leftStudentsDetail.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.NewAdmission.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.SchoolLeavingCertificate.resources
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.StudentContacts.resources

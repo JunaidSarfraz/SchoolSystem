@@ -182,11 +182,26 @@
     <Compile Include="WeeklyType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AbsentReport.resx">
+      <DependentUpon>AbsentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttandanceScreen.resx">
+      <DependentUpon>AttandanceScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterCertificate.resx">
+      <DependentUpon>CharacterCertificate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassWiseStrength.resx">
       <DependentUpon>ClassWiseStrength.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leftStudentsDetail.resx">
+      <DependentUpon>leftStudentsDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAdmission.resx">
+      <DependentUpon>NewAdmission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,6 +213,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SchoolLeavingCertificate.resx">
+      <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentContacts.resx">
+      <DependentUpon>StudentContacts.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
