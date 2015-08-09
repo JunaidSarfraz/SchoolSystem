@@ -29,8 +29,7 @@ namespace SchoolSystem
 
         public int CompareTo(object obj)
         {
-            Class OtherObject = obj as Class;
-            return this.Name.CompareTo(OtherObject.Name);
+            return this.Name.CompareTo((obj as Class).Name);
         }
     }
 }

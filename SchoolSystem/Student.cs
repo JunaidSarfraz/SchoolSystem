@@ -12,7 +12,7 @@ namespace SchoolSystem
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class Student : IComparable
     {
         public Student()
         {
@@ -33,11 +33,18 @@ namespace SchoolSystem
         public string Address { get; set; }
         public string Religion { get; set; }
         public Nullable<bool> Status { get; set; }
+        public Nullable<System.DateTime> LeaveDate { get; set; }
     
         public virtual ICollection<Attandance> Attandances { get; set; }
         public virtual ICollection<Challan> Challans { get; set; }
         public virtual ICollection<ExamResult> ExamResults { get; set; }
         public virtual Section Section { get; set; }
         public virtual ICollection<StudentToFeeHead> StudentToFeeHeads { get; set; }
+
+        public int CompareTo(object obj)
+        {
+            return this.Section.Class.Name.CompareTo((obj as Student
+                ).Section.Class.Name);
+        }
     }
 }

@@ -152,6 +152,7 @@
     <NavigationProperty Name="ExamResults" Relationship="Self.FK_ExamResults_Student" FromRole="Student" ToRole="ExamResults" />
     <NavigationProperty Name="Section" Relationship="Self.FK_Student_Section" FromRole="Student" ToRole="Section" />
     <NavigationProperty Name="StudentToFeeHeads" Relationship="Self.FK_StudentToFeeHeads_Student" FromRole="Student" ToRole="StudentToFeeHeads" />
+    <Property Name="LeaveDate" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>

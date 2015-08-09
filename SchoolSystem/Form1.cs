@@ -27,29 +27,67 @@ namespace SchoolSystem
             }
             else if (treeView1.SelectedNode.Name.Equals("btn_Class_Wise_Strngth"))
             { 
-                ClassWiseStrength ReportResult = new ClassWiseStrength();
-                int RowNnumberTrace = 0;
+                ClassWiseStrength RequiredScreen = new ClassWiseStrength();
+                int RowNnumberTrace = 1;
                 List<Class> AllClasses = database.Classes.ToList();
                 AllClasses.Sort();
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Class" }, 0, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Section" }, 1, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Number Of Students", AutoSize=true }, 2, 0);
                 foreach (Class c in AllClasses)
                 {
                     foreach(Section s in c.Sections)
                     {
-                        ReportResult.tableLayoutPanel1.RowCount++;
-                        ReportResult.tableLayoutPanel1.Controls.Add(new Label { Text = s.Class.Name} , 0, RowNnumberTrace);
-                        ReportResult.tableLayoutPanel1.Controls.Add(new Label { Text = s.Title }, 1, RowNnumberTrace);
-                        ReportResult.tableLayoutPanel1.Controls.Add(new Label { Text = s.Students.Count.ToString() }, 2, RowNnumberTrace);
+                        RequiredScreen.tableLayoutPanel1.RowCount++;
+                        RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = s.Class.Name }, 0, RowNnumberTrace);
+                        RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = s.Title }, 1, RowNnumberTrace);
+                        RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = s.Students.Count.ToString() }, 2, RowNnumberTrace);
                         RowNnumberTrace++;
                     }
                 }
                 this.splitContainer1.Panel2.Controls.Clear();
-                this.splitContainer1.Panel2.Controls.Add(ReportResult);
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen.tableLayoutPanel1);
             }
             else if (treeView1.SelectedNode.Name.Equals("btn_Left_Student_Details"))
             {
-                leftStudentsDetail RequiredScreen = new leftStudentsDetail();
                 this.splitContainer1.Panel2.Controls.Clear();
-                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+                leftStudentsDetail RequiredScreen = new leftStudentsDetail();
+                RequiredScreen.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+                List<Student> RequiredStudents = database.Students.Where(x => x.Status == false).ToList();
+                RequiredStudents.Sort();
+                int RowNnumberTrace = 1;
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "RollNumber" }, 0, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Name" }, 1, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "FatherName" }, 2, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "DateOfBirth" }, 3, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Class" }, 4, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Section" }, 5, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Admission Date" }, 6, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Phone Number" }, 7, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Address" }, 8, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Religion" }, 9, 0);
+                RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = "Leave Date" }, 10, 0);
+                foreach(Student std in RequiredStudents)
+                {
+                    RequiredScreen.tableLayoutPanel1.RowCount++;
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.RollNumber }, 0, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.Name }, 1, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.FatherName }, 2, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.DateOfBirth.ToString() }, 3, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.Section.Class.Name }, 4, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.Section.Title }, 5, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.AdmissionDate.ToString() }, 6, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.PhoneNumber }, 7, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.Address }, 8, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.Religion }, 9, RowNnumberTrace);
+                    RequiredScreen.tableLayoutPanel1.Controls.Add(new Label { Text = std.LeaveDate.ToString() }, 10, RowNnumberTrace);
+                    RowNnumberTrace++;
+                }
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen.tableLayoutPanel1);
+                RequiredScreen.AutoSize = true;
+                RequiredScreen.AutoScroll = true;
+                RequiredScreen.tableLayoutPanel1.AutoSize = true;
+                RequiredScreen.tableLayoutPanel1.AutoScroll = true;
             }
             else if (treeView1.SelectedNode.Name.Equals("btn_Attandance"))
             {

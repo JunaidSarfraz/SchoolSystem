@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SchoolSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SchoolSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Attandance">
           <Key>
             <PropertyRef Name="id" />
@@ -144,6 +144,7 @@ warning 6002: The table/view 'SchoolSystem.dbo.ChallanToFeeHeads' does not have 
           <Property Name="Address" Type="varchar(max)" />
           <Property Name="Religion" Type="varchar(max)" />
           <Property Name="Status" Type="bit" />
+          <Property Name="LeaveDate" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'SchoolSystem.dbo.StudentToFeeHeads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -456,8 +457,7 @@ FROM [dbo].[StudentToFeeHeads] AS [StudentToFeeHeads]</DefiningQuery>
             <End Role="StudentToFeeHeads" EntitySet="StudentToFeeHeads" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SchoolSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -613,6 +613,7 @@ FROM [dbo].[StudentToFeeHeads] AS [StudentToFeeHeads]</DefiningQuery>
           <NavigationProperty Name="ExamResults" Relationship="Self.FK_ExamResults_Student" FromRole="Student" ToRole="ExamResults" />
           <NavigationProperty Name="Section" Relationship="Self.FK_Student_Section" FromRole="Student" ToRole="Section" />
           <NavigationProperty Name="StudentToFeeHeads" Relationship="Self.FK_StudentToFeeHeads_Student" FromRole="Student" ToRole="StudentToFeeHeads" />
+          <Property Name="LeaveDate" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -1057,6 +1058,7 @@ FROM [dbo].[StudentToFeeHeads] AS [StudentToFeeHeads]</DefiningQuery>
           <EntitySetMapping Name="Students">
             <EntityTypeMapping TypeName="SchoolSystemModel.Student">
               <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="LeaveDate" ColumnName="LeaveDate" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="RollNumber" ColumnName="RollNumber" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

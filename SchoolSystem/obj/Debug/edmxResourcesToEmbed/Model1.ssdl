@@ -139,6 +139,7 @@ warning 6002: The table/view 'SchoolSystem.dbo.ChallanToFeeHeads' does not have 
     <Property Name="Address" Type="varchar(max)" />
     <Property Name="Religion" Type="varchar(max)" />
     <Property Name="Status" Type="bit" />
+    <Property Name="LeaveDate" Type="datetime" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'SchoolSystem.dbo.StudentToFeeHeads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->

@@ -128,6 +128,7 @@
     <EntitySetMapping Name="Students">
       <EntityTypeMapping TypeName="SchoolSystemModel.Student">
         <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="LeaveDate" ColumnName="LeaveDate" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="RollNumber" ColumnName="RollNumber" />
           <ScalarProperty Name="Name" ColumnName="Name" />

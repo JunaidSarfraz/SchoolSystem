@@ -15,5 +15,6 @@ namespace SchoolSystem
         {
             InitializeComponent();
         }
+
     }
 }
