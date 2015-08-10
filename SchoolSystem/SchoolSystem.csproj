@@ -155,6 +155,12 @@
     <Compile Include="SchoolLeavingCertificate.Designer.cs">
       <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchStudent.Designer.cs">
+      <DependentUpon>SearchStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -215,6 +221,9 @@
     </Compile>
     <EmbeddedResource Include="SchoolLeavingCertificate.resx">
       <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStudent.resx">
+      <DependentUpon>SearchStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentContacts.resx">
       <DependentUpon>StudentContacts.cs</DependentUpon>
