@@ -19,7 +19,13 @@ namespace SchoolSystem
         }
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            if(treeView1.SelectedNode.Name.Equals("btn_New_Admission"))
+            if(treeView1.SelectedNode.Name.Equals("btn_Student_Management"))
+            {
+                SearchStudent RequiredScreen = new SearchStudent();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if(treeView1.SelectedNode.Name.Equals("btn_New_Admission"))
             {
                 NewAdmission RequiredScreen = new NewAdmission();
                 this.splitContainer1.Panel2.Controls.Clear();

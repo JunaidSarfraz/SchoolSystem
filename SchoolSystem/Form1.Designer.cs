@@ -28,89 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode221 = new System.Windows.Forms.TreeNode("New Admission");
-            System.Windows.Forms.TreeNode treeNode222 = new System.Windows.Forms.TreeNode("Class Wise Strength");
-            System.Windows.Forms.TreeNode treeNode223 = new System.Windows.Forms.TreeNode("Left Students Details");
-            System.Windows.Forms.TreeNode treeNode224 = new System.Windows.Forms.TreeNode("Attandance");
-            System.Windows.Forms.TreeNode treeNode225 = new System.Windows.Forms.TreeNode("Absent Report");
-            System.Windows.Forms.TreeNode treeNode226 = new System.Windows.Forms.TreeNode("School Leaving certificate");
-            System.Windows.Forms.TreeNode treeNode227 = new System.Windows.Forms.TreeNode("Student Contacts");
-            System.Windows.Forms.TreeNode treeNode228 = new System.Windows.Forms.TreeNode("Character Certificate");
-            System.Windows.Forms.TreeNode treeNode229 = new System.Windows.Forms.TreeNode("Student Management", new System.Windows.Forms.TreeNode[] {
-            treeNode221,
-            treeNode222,
-            treeNode223,
-            treeNode224,
-            treeNode225,
-            treeNode226,
-            treeNode227,
-            treeNode228});
-            System.Windows.Forms.TreeNode treeNode230 = new System.Windows.Forms.TreeNode("Class Wise Fee Structure");
-            System.Windows.Forms.TreeNode treeNode231 = new System.Windows.Forms.TreeNode("Fee Voucher");
-            System.Windows.Forms.TreeNode treeNode232 = new System.Windows.Forms.TreeNode("Fee Collection Report");
-            System.Windows.Forms.TreeNode treeNode233 = new System.Windows.Forms.TreeNode("Auto Fee Calculation");
-            System.Windows.Forms.TreeNode treeNode234 = new System.Windows.Forms.TreeNode("Defaulter List");
-            System.Windows.Forms.TreeNode treeNode235 = new System.Windows.Forms.TreeNode("Concession Report");
-            System.Windows.Forms.TreeNode treeNode236 = new System.Windows.Forms.TreeNode("Customizable Fee Structure");
-            System.Windows.Forms.TreeNode treeNode237 = new System.Windows.Forms.TreeNode("Student Fee History");
-            System.Windows.Forms.TreeNode treeNode238 = new System.Windows.Forms.TreeNode("Daily / Weekly / Monthly Income Report");
-            System.Windows.Forms.TreeNode treeNode239 = new System.Windows.Forms.TreeNode("Fine / Annual Charges / Other fee Support");
-            System.Windows.Forms.TreeNode treeNode240 = new System.Windows.Forms.TreeNode("Fee Change System");
-            System.Windows.Forms.TreeNode treeNode241 = new System.Windows.Forms.TreeNode("SMS to Defauulters");
-            System.Windows.Forms.TreeNode treeNode242 = new System.Windows.Forms.TreeNode("Fee Management", new System.Windows.Forms.TreeNode[] {
-            treeNode230,
-            treeNode231,
-            treeNode232,
-            treeNode233,
-            treeNode234,
-            treeNode235,
-            treeNode236,
-            treeNode237,
-            treeNode238,
-            treeNode239,
-            treeNode240,
-            treeNode241});
-            System.Windows.Forms.TreeNode treeNode243 = new System.Windows.Forms.TreeNode("ClassWise Exam Schedule");
-            System.Windows.Forms.TreeNode treeNode244 = new System.Windows.Forms.TreeNode("Class Wise Result");
-            System.Windows.Forms.TreeNode treeNode245 = new System.Windows.Forms.TreeNode("ClassWise Best Student");
-            System.Windows.Forms.TreeNode treeNode246 = new System.Windows.Forms.TreeNode("TermWise Result Card");
-            System.Windows.Forms.TreeNode treeNode247 = new System.Windows.Forms.TreeNode("Result Card Genration");
-            System.Windows.Forms.TreeNode treeNode248 = new System.Windows.Forms.TreeNode("Progress Report");
-            System.Windows.Forms.TreeNode treeNode249 = new System.Windows.Forms.TreeNode("Overall Result of School");
-            System.Windows.Forms.TreeNode treeNode250 = new System.Windows.Forms.TreeNode("DateSheet of Examination");
-            System.Windows.Forms.TreeNode treeNode251 = new System.Windows.Forms.TreeNode("Exam Management", new System.Windows.Forms.TreeNode[] {
-            treeNode243,
-            treeNode244,
-            treeNode245,
-            treeNode246,
-            treeNode247,
-            treeNode248,
-            treeNode249,
-            treeNode250});
-            System.Windows.Forms.TreeNode treeNode252 = new System.Windows.Forms.TreeNode("Attandance");
-            System.Windows.Forms.TreeNode treeNode253 = new System.Windows.Forms.TreeNode("Staff Registration");
-            System.Windows.Forms.TreeNode treeNode254 = new System.Windows.Forms.TreeNode("Monthly Attandance Report");
-            System.Windows.Forms.TreeNode treeNode255 = new System.Windows.Forms.TreeNode("Employee Salary ");
-            System.Windows.Forms.TreeNode treeNode256 = new System.Windows.Forms.TreeNode("Staff Salary Sheet");
-            System.Windows.Forms.TreeNode treeNode257 = new System.Windows.Forms.TreeNode("Experience Certificate");
-            System.Windows.Forms.TreeNode treeNode258 = new System.Windows.Forms.TreeNode("Time Table of Employees");
-            System.Windows.Forms.TreeNode treeNode259 = new System.Windows.Forms.TreeNode("Staff Management", new System.Windows.Forms.TreeNode[] {
-            treeNode252,
-            treeNode253,
-            treeNode254,
-            treeNode255,
-            treeNode256,
-            treeNode257,
-            treeNode258});
-            System.Windows.Forms.TreeNode treeNode260 = new System.Windows.Forms.TreeNode("Expense");
-            System.Windows.Forms.TreeNode treeNode261 = new System.Windows.Forms.TreeNode("Income");
-            System.Windows.Forms.TreeNode treeNode262 = new System.Windows.Forms.TreeNode("Payment Management", new System.Windows.Forms.TreeNode[] {
-            treeNode260,
-            treeNode261});
-            System.Windows.Forms.TreeNode treeNode263 = new System.Windows.Forms.TreeNode("Balance Sheet");
-            System.Windows.Forms.TreeNode treeNode264 = new System.Windows.Forms.TreeNode("Accounts Management", new System.Windows.Forms.TreeNode[] {
-            treeNode262,
-            treeNode263});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("New Admission");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Class Wise Strength");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Left Students Details");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Attandance");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Absent Report");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("School Leaving certificate");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Student Contacts");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Character Certificate");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Student Management", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Class Wise Fee Structure");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Fee Voucher");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Fee Collection Report");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Auto Fee Calculation");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Defaulter List");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Concession Report");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Customizable Fee Structure");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Student Fee History");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Daily / Weekly / Monthly Income Report");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Fine / Annual Charges / Other fee Support");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Fee Change System");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("SMS to Defauulters");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Fee Management", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14,
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21});
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("ClassWise Exam Schedule");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Class Wise Result");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("ClassWise Best Student");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("TermWise Result Card");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Result Card Genration");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Progress Report");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Overall Result of School");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("DateSheet of Examination");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Exam Management", new System.Windows.Forms.TreeNode[] {
+            treeNode23,
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27,
+            treeNode28,
+            treeNode29,
+            treeNode30});
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Attandance");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Staff Registration");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Monthly Attandance Report");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Employee Salary ");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Staff Salary Sheet");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Experience Certificate");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Time Table of Employees");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Staff Management", new System.Windows.Forms.TreeNode[] {
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36,
+            treeNode37,
+            treeNode38});
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Expense");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Income");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Payment Management", new System.Windows.Forms.TreeNode[] {
+            treeNode40,
+            treeNode41});
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Balance Sheet");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Accounts Management", new System.Windows.Forms.TreeNode[] {
+            treeNode42,
+            treeNode43});
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -131,6 +131,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.AutoScroll = true;
             this.splitContainer1.Panel2.AutoScrollMargin = new System.Drawing.Size(100, 100);
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,105 +145,105 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode221.Name = "btn_New_Admission";
-            treeNode221.Text = "New Admission";
-            treeNode222.Name = "btn_Class_Wise_Strngth";
-            treeNode222.Text = "Class Wise Strength";
-            treeNode223.Name = "btn_Left_Student_Details";
-            treeNode223.Text = "Left Students Details";
-            treeNode224.Name = "btn_Attandance";
-            treeNode224.Text = "Attandance";
-            treeNode225.Name = "btn_Absent_Report";
-            treeNode225.Text = "Absent Report";
-            treeNode226.Name = "btn_School_Leaving_Certificate";
-            treeNode226.Text = "School Leaving certificate";
-            treeNode227.Name = "btn_Student_Contact";
-            treeNode227.Text = "Student Contacts";
-            treeNode228.Name = "btn_Character_Certificate";
-            treeNode228.Text = "Character Certificate";
-            treeNode229.BackColor = System.Drawing.Color.Transparent;
-            treeNode229.Checked = true;
-            treeNode229.ForeColor = System.Drawing.Color.Black;
-            treeNode229.Name = "Btn_Student_Management";
-            treeNode229.Text = "Student Management";
-            treeNode230.Name = "Node11";
-            treeNode230.Text = "Class Wise Fee Structure";
-            treeNode231.Name = "Node12";
-            treeNode231.Text = "Fee Voucher";
-            treeNode232.Name = "Node13";
-            treeNode232.Text = "Fee Collection Report";
-            treeNode233.Name = "Node14";
-            treeNode233.Text = "Auto Fee Calculation";
-            treeNode234.Name = "Node15";
-            treeNode234.Text = "Defaulter List";
-            treeNode235.Name = "Node16";
-            treeNode235.Text = "Concession Report";
-            treeNode236.Name = "Node17";
-            treeNode236.Text = "Customizable Fee Structure";
-            treeNode237.Name = "Node18";
-            treeNode237.Text = "Student Fee History";
-            treeNode238.Name = "Node19";
-            treeNode238.Text = "Daily / Weekly / Monthly Income Report";
-            treeNode239.Name = "Node20";
-            treeNode239.Text = "Fine / Annual Charges / Other fee Support";
-            treeNode240.Name = "Node21";
-            treeNode240.Text = "Fee Change System";
-            treeNode241.Name = "Node22";
-            treeNode241.Text = "SMS to Defauulters";
-            treeNode242.Name = "Node10";
-            treeNode242.Text = "Fee Management";
-            treeNode243.Name = "Node35";
-            treeNode243.Text = "ClassWise Exam Schedule";
-            treeNode244.Name = "Node36";
-            treeNode244.Text = "Class Wise Result";
-            treeNode245.Name = "Node37";
-            treeNode245.Text = "ClassWise Best Student";
-            treeNode246.Name = "Node38";
-            treeNode246.Text = "TermWise Result Card";
-            treeNode247.Name = "Node39";
-            treeNode247.Text = "Result Card Genration";
-            treeNode248.Name = "Node40";
-            treeNode248.Text = "Progress Report";
-            treeNode249.Name = "Node41";
-            treeNode249.Text = "Overall Result of School";
-            treeNode250.Name = "Node42";
-            treeNode250.Text = "DateSheet of Examination";
-            treeNode251.BackColor = System.Drawing.Color.Transparent;
-            treeNode251.ForeColor = System.Drawing.Color.Black;
-            treeNode251.Name = "Node33";
-            treeNode251.Text = "Exam Management";
-            treeNode252.Name = "Node44";
-            treeNode252.Text = "Attandance";
-            treeNode253.Name = "Node45";
-            treeNode253.Text = "Staff Registration";
-            treeNode254.Name = "Node46";
-            treeNode254.Text = "Monthly Attandance Report";
-            treeNode255.Name = "Node47";
-            treeNode255.Text = "Employee Salary ";
-            treeNode256.Name = "Node48";
-            treeNode256.Text = "Staff Salary Sheet";
-            treeNode257.Name = "Node49";
-            treeNode257.Text = "Experience Certificate";
-            treeNode258.Name = "Node50";
-            treeNode258.Text = "Time Table of Employees";
-            treeNode259.Name = "Node43";
-            treeNode259.Text = "Staff Management";
-            treeNode260.Name = "Node54";
-            treeNode260.Text = "Expense";
-            treeNode261.Name = "Node55";
-            treeNode261.Text = "Income";
-            treeNode262.Name = "Node53";
-            treeNode262.Text = "Payment Management";
-            treeNode263.Name = "Node56";
-            treeNode263.Text = "Balance Sheet";
-            treeNode264.Name = "Node52";
-            treeNode264.Text = "Accounts Management";
+            treeNode1.Name = "btn_New_Admission";
+            treeNode1.Text = "New Admission";
+            treeNode2.Name = "btn_Class_Wise_Strngth";
+            treeNode2.Text = "Class Wise Strength";
+            treeNode3.Name = "btn_Left_Student_Details";
+            treeNode3.Text = "Left Students Details";
+            treeNode4.Name = "btn_Attandance";
+            treeNode4.Text = "Attandance";
+            treeNode5.Name = "btn_Absent_Report";
+            treeNode5.Text = "Absent Report";
+            treeNode6.Name = "btn_School_Leaving_Certificate";
+            treeNode6.Text = "School Leaving certificate";
+            treeNode7.Name = "btn_Student_Contact";
+            treeNode7.Text = "Student Contacts";
+            treeNode8.Name = "btn_Character_Certificate";
+            treeNode8.Text = "Character Certificate";
+            treeNode9.BackColor = System.Drawing.Color.Transparent;
+            treeNode9.Checked = true;
+            treeNode9.ForeColor = System.Drawing.Color.Black;
+            treeNode9.Name = "btn_Student_Management";
+            treeNode9.Text = "Student Management";
+            treeNode10.Name = "Node11";
+            treeNode10.Text = "Class Wise Fee Structure";
+            treeNode11.Name = "Node12";
+            treeNode11.Text = "Fee Voucher";
+            treeNode12.Name = "Node13";
+            treeNode12.Text = "Fee Collection Report";
+            treeNode13.Name = "Node14";
+            treeNode13.Text = "Auto Fee Calculation";
+            treeNode14.Name = "Node15";
+            treeNode14.Text = "Defaulter List";
+            treeNode15.Name = "Node16";
+            treeNode15.Text = "Concession Report";
+            treeNode16.Name = "Node17";
+            treeNode16.Text = "Customizable Fee Structure";
+            treeNode17.Name = "Node18";
+            treeNode17.Text = "Student Fee History";
+            treeNode18.Name = "Node19";
+            treeNode18.Text = "Daily / Weekly / Monthly Income Report";
+            treeNode19.Name = "Node20";
+            treeNode19.Text = "Fine / Annual Charges / Other fee Support";
+            treeNode20.Name = "Node21";
+            treeNode20.Text = "Fee Change System";
+            treeNode21.Name = "Node22";
+            treeNode21.Text = "SMS to Defauulters";
+            treeNode22.Name = "Node10";
+            treeNode22.Text = "Fee Management";
+            treeNode23.Name = "Node35";
+            treeNode23.Text = "ClassWise Exam Schedule";
+            treeNode24.Name = "Node36";
+            treeNode24.Text = "Class Wise Result";
+            treeNode25.Name = "Node37";
+            treeNode25.Text = "ClassWise Best Student";
+            treeNode26.Name = "Node38";
+            treeNode26.Text = "TermWise Result Card";
+            treeNode27.Name = "Node39";
+            treeNode27.Text = "Result Card Genration";
+            treeNode28.Name = "Node40";
+            treeNode28.Text = "Progress Report";
+            treeNode29.Name = "Node41";
+            treeNode29.Text = "Overall Result of School";
+            treeNode30.Name = "Node42";
+            treeNode30.Text = "DateSheet of Examination";
+            treeNode31.BackColor = System.Drawing.Color.Transparent;
+            treeNode31.ForeColor = System.Drawing.Color.Black;
+            treeNode31.Name = "Node33";
+            treeNode31.Text = "Exam Management";
+            treeNode32.Name = "Node44";
+            treeNode32.Text = "Attandance";
+            treeNode33.Name = "Node45";
+            treeNode33.Text = "Staff Registration";
+            treeNode34.Name = "Node46";
+            treeNode34.Text = "Monthly Attandance Report";
+            treeNode35.Name = "Node47";
+            treeNode35.Text = "Employee Salary ";
+            treeNode36.Name = "Node48";
+            treeNode36.Text = "Staff Salary Sheet";
+            treeNode37.Name = "Node49";
+            treeNode37.Text = "Experience Certificate";
+            treeNode38.Name = "Node50";
+            treeNode38.Text = "Time Table of Employees";
+            treeNode39.Name = "Node43";
+            treeNode39.Text = "Staff Management";
+            treeNode40.Name = "Node54";
+            treeNode40.Text = "Expense";
+            treeNode41.Name = "Node55";
+            treeNode41.Text = "Income";
+            treeNode42.Name = "Node53";
+            treeNode42.Text = "Payment Management";
+            treeNode43.Name = "Node56";
+            treeNode43.Text = "Balance Sheet";
+            treeNode44.Name = "Node52";
+            treeNode44.Text = "Accounts Management";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode229,
-            treeNode242,
-            treeNode251,
-            treeNode259,
-            treeNode264});
+            treeNode9,
+            treeNode22,
+            treeNode31,
+            treeNode39,
+            treeNode44});
             this.treeView1.Size = new System.Drawing.Size(364, 711);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
