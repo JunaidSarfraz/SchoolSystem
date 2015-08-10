@@ -15,10 +15,12 @@ namespace SchoolSystem
         static SchoolSystemEntities1 database = new SchoolSystemEntities1();
         public Form1()
         {
+            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            this.treeView1.SelectedNode.Expand();
             if(treeView1.SelectedNode.Name.Equals("btn_Student_Management"))
             {
                 SearchStudent RequiredScreen = new SearchStudent();

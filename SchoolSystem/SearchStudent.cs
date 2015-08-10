@@ -27,6 +27,12 @@ namespace SchoolSystem
             String Name = this.TxtName.Text;
             String FatherName = this.TxtFatherName.Text;
             String Phone = this.TxtPhoneNumber.Text;
+            String ClassName = "";
+            if(this.ClassComboBox.SelectedItem != null)
+                ClassName = this.ClassComboBox.SelectedItem.ToString();
+            String SectionName = "";
+            if(this.SectionComboBox.SelectedItem != null)
+                SectionName = this.SectionComboBox.SelectedItem.ToString();
             List<Student> RequiredStudents = database.Students.ToList();
             if(!RollNumber.Equals(""))
             {
@@ -43,6 +49,17 @@ namespace SchoolSystem
             if (!Phone.Equals(""))
             {
                 RequiredStudents = RequiredStudents.Where(x => x.PhoneNumber == Phone).ToList();
+            }
+            if(!ClassName.Equals(""))
+            {
+                if(SectionName.Equals(""))
+                {
+                    RequiredStudents = RequiredStudents.Where(x => x.Section.Class.Name == ClassName).ToList();
+                }
+                else
+                {
+                    RequiredStudents = RequiredStudents.Where(x => x.Section.Class.Name == ClassName && x.Section.Title == SectionName).ToList();
+                }
             }
             if (RequiredStudents.Count == 0)
                 this.label5.Text = "No Record Found";
@@ -83,6 +100,27 @@ namespace SchoolSystem
                     this.Refresh();
                 }
             }
+        }
+
+        private void SearchStudent_Load(object sender, EventArgs e)
+        {
+            foreach(Class c in database.Classes)
+            {
+                this.ClassComboBox.Items.Add(c.Name);
+            }
+        }
+
+        private void ClassComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<Section> RequiredSections = database.Sections.Where(X => X.Class.Name == this.ClassComboBox.SelectedItem.ToString()).ToList();
+            this.SectionComboBox.Items.Clear();
+            this.SectionComboBox.SelectedItem = null;
+            this.Refresh();
+            foreach(Section s in RequiredSections)
+            {
+                this.SectionComboBox.Items.Add(s.Title);
+            }
+            this.Refresh();
         }
 
     }

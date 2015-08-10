@@ -39,6 +39,10 @@
             this.BtnSearchStudent = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
+            this.ClassComboBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.SectionComboBox = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TxtRollNumber
@@ -107,7 +111,7 @@
             // 
             // BtnSearchStudent
             // 
-            this.BtnSearchStudent.Location = new System.Drawing.Point(504, 144);
+            this.BtnSearchStudent.Location = new System.Drawing.Point(504, 199);
             this.BtnSearchStudent.Name = "BtnSearchStudent";
             this.BtnSearchStudent.Size = new System.Drawing.Size(75, 23);
             this.BtnSearchStudent.TabIndex = 8;
@@ -131,7 +135,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 478F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 206);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 269);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -142,11 +146,46 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(139, 164);
+            this.label5.Location = new System.Drawing.Point(89, 237);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "label5";
+            // 
+            // ClassComboBox
+            // 
+            this.ClassComboBox.FormattingEnabled = true;
+            this.ClassComboBox.Location = new System.Drawing.Point(92, 144);
+            this.ClassComboBox.Name = "ClassComboBox";
+            this.ClassComboBox.Size = new System.Drawing.Size(176, 21);
+            this.ClassComboBox.TabIndex = 11;
+            this.ClassComboBox.SelectedIndexChanged += new System.EventHandler(this.ClassComboBox_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(31, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Class";
+            // 
+            // SectionComboBox
+            // 
+            this.SectionComboBox.FormattingEnabled = true;
+            this.SectionComboBox.Location = new System.Drawing.Point(403, 144);
+            this.SectionComboBox.Name = "SectionComboBox";
+            this.SectionComboBox.Size = new System.Drawing.Size(176, 21);
+            this.SectionComboBox.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(318, 152);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Section";
             // 
             // SearchStudent
             // 
@@ -154,6 +193,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.SectionComboBox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.ClassComboBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.BtnSearchStudent);
@@ -167,6 +210,7 @@
             this.Controls.Add(this.TxtRollNumber);
             this.Name = "SearchStudent";
             this.Size = new System.Drawing.Size(599, 319);
+            this.Load += new System.EventHandler(this.SearchStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +229,9 @@
         private System.Windows.Forms.Button BtnSearchStudent;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox ClassComboBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox SectionComboBox;
+        private System.Windows.Forms.Label label7;
     }
 }
