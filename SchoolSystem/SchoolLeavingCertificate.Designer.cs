@@ -36,9 +36,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(167, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 13);
+            this.label1.Size = new System.Drawing.Size(237, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "This is School Leaving Certificate";
+            this.label1.Text = "This is School Leaving Certificate Edited By atlas";
             // 
             // SchoolLeavingCertificate
             // 
