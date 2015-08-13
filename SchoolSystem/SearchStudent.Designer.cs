@@ -43,6 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.SectionComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnExportToPDF = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TxtRollNumber
@@ -134,14 +135,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 269);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 478F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 261);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(478, 10);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(478, 28);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.TabStop = true;
             // 
@@ -189,12 +191,23 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Section";
             // 
+            // btnExportToPDF
+            // 
+            this.btnExportToPDF.AutoSize = true;
+            this.btnExportToPDF.Location = new System.Drawing.Point(373, 199);
+            this.btnExportToPDF.Name = "btnExportToPDF";
+            this.btnExportToPDF.Size = new System.Drawing.Size(83, 23);
+            this.btnExportToPDF.TabIndex = 15;
+            this.btnExportToPDF.Text = "Export to PDF";
+            this.btnExportToPDF.UseVisualStyleBackColor = true;
+            this.btnExportToPDF.Click += new System.EventHandler(this.btnExportToPDF_Click);
+            // 
             // SearchStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoSize = true;
+            this.Controls.Add(this.btnExportToPDF);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.SectionComboBox);
             this.Controls.Add(this.label6);
@@ -211,7 +224,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtRollNumber);
             this.Name = "SearchStudent";
-            this.Size = new System.Drawing.Size(599, 319);
+            this.Size = new System.Drawing.Size(604, 346);
             this.Load += new System.EventHandler(this.SearchStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,5 +248,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox SectionComboBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnExportToPDF;
     }
 }
