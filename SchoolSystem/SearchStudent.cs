@@ -20,9 +20,9 @@ namespace SchoolSystem
 
         private void BtnSearchStudent_Click(object sender, EventArgs e)
         {
-            this.label5.Text = "Please Wait..."; // Label with no record Found
             this.tableLayoutPanel1.Controls.Clear();
             this.Refresh();
+            this.label5.Text = "Please Wait..."; // Label with no record Found
             String RollNumber = this.TxtRollNumber.Text;
             String Name = this.TxtName.Text;
             String FatherName = this.TxtFatherName.Text;
@@ -69,36 +69,37 @@ namespace SchoolSystem
                 this.Refresh();
                 RequiredStudents.Sort();
                 int RowNnumberTrace = 1;
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "RollNumber" }, 0, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Name" }, 1, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "FatherName" }, 2, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "DateOfBirth" }, 3, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Class" }, 4, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Section" }, 5, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Admission Date" }, 6, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Phone Number" }, 7, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Address" }, 8, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Religion" }, 9, 0);
-                this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = "Leave Date" }, 10, 0);
+                MessageBox.Show(this.tableLayoutPanel1.RowCount+"");
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "RollNumber" }, 0, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Name" }, 1, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "FatherName" }, 2, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "DateOfBirth" }, 3, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Class" }, 4, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Section" }, 5, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Admission Date" }, 6, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Phone Number" }, 7, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Address" }, 8, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Religion" }, 9, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Leave Date" }, 10, 0);
                 foreach (Student std in RequiredStudents)
                 {
                     this.tableLayoutPanel1.RowCount++;
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.RollNumber }, 0, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.Name }, 1, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.FatherName }, 2, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.DateOfBirth.ToString() }, 3, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.Section.Class.Name }, 4, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.Section.Title }, 5, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.AdmissionDate.ToString() }, 6, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.PhoneNumber }, 7, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.Address }, 8, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.Religion }, 9, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new MaskedTextBox() { Text = std.LeaveDate.ToString() }, 10, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.RollNumber , AutoSize = true }, 0, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Name }, 1, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.FatherName }, 2, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.DateOfBirth.ToString() }, 3, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Section.Class.Name }, 4, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Section.Title }, 5, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.AdmissionDate.ToString() }, 6, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.PhoneNumber }, 7, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Address, AutoSize = true }, 8, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Religion }, 9, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.LeaveDate.ToString() }, 10, RowNnumberTrace);
                     RowNnumberTrace++;
-                    this.label5.Text = RequiredStudents.Count+" Numbers of student Found";
-                    this.tableLayoutPanel1.Show();
-                    this.Refresh();
                 }
+                this.label5.Text = RequiredStudents.Count + " Numbers of student Found";
+                this.tableLayoutPanel1.Show();
+                this.Refresh();
             }
         }
 
@@ -121,6 +122,11 @@ namespace SchoolSystem
                 this.SectionComboBox.Items.Add(s.Title);
             }
             this.Refresh();
+        }
+
+        private void btnExportToPDF_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
