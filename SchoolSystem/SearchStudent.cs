@@ -69,32 +69,59 @@ namespace SchoolSystem
                 this.Refresh();
                 RequiredStudents.Sort();
                 int RowNnumberTrace = 1;
-                MessageBox.Show(this.tableLayoutPanel1.RowCount+"");
                 this.tableLayoutPanel1.Controls.Add(new Label() { Text = "RollNumber" }, 0, 0);
                 this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Name" }, 1, 0);
                 this.tableLayoutPanel1.Controls.Add(new Label() { Text = "FatherName" }, 2, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "DateOfBirth" }, 3, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Class" }, 4, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Section" }, 5, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Admission Date" }, 6, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Phone Number" }, 7, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Address" }, 8, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Religion" }, 9, 0);
-                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Leave Date" }, 10, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Class" }, 3, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Section" }, 4, 0);
+                this.tableLayoutPanel1.Controls.Add(new Label() { Text = "Phone Number" }, 5, 0);
+                Button[] Btns_Details = new Button[RequiredStudents.Count];
+                int buttonDetailsIndex = 0;
                 foreach (Student std in RequiredStudents)
                 {
                     this.tableLayoutPanel1.RowCount++;
                     this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.RollNumber , AutoSize = true }, 0, RowNnumberTrace);
                     this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Name }, 1, RowNnumberTrace);
                     this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.FatherName }, 2, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.DateOfBirth.ToString() }, 3, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Section.Class.Name }, 4, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Section.Title }, 5, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.AdmissionDate.ToString() }, 6, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.PhoneNumber }, 7, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Address, AutoSize = true }, 8, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Religion }, 9, RowNnumberTrace);
-                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.LeaveDate.ToString() }, 10, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Section.Class.Name }, 3, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.Section.Title }, 4, RowNnumberTrace);
+                    this.tableLayoutPanel1.Controls.Add(new Label() { Text = std.PhoneNumber }, 5, RowNnumberTrace);
+                    
+                    Btns_Details[buttonDetailsIndex] = new Button();
+                    Btns_Details[buttonDetailsIndex].AutoSize = true;
+                    Btns_Details[buttonDetailsIndex].Text = "Details";
+                    Btns_Details[buttonDetailsIndex].Click += delegate(Object o, EventArgs EventAruguments)
+                    {
+                        ViewStudentDetails StudentInfo = new ViewStudentDetails();
+                        StudentInfo.RollNumberTextBox.Text = std.RollNumber;
+                        StudentInfo.StudentNameTextBox.Text = std.Name;
+                        StudentInfo.FatherNameTextBox.Text = std.FatherName;
+                        if (std.Gender == false) //it means Gender is male
+                            StudentInfo.GenderComboBox.SelectedItem = "Male";
+                        else
+                            StudentInfo.GenderComboBox.SelectedItem = "Female";
+                        //Adding all classs in database to class ComboBox
+                        StudentInfo.ClassComboBox.Items.AddRange(database.Classes.Select(X => X.Name).ToArray());
+                        StudentInfo.ClassComboBox.SelectedItem = std.Section.Class.Name;
+                        //Adding Sections in section ComboBox
+                        StudentInfo.SectionComboBox.Items.AddRange(std.Section.Class.Sections.Select(X => X.Title).ToArray());
+                        StudentInfo.SectionComboBox.SelectedItem = std.Section.Title;
+                        StudentInfo.AdmissionDateDateTimePicker.Value = (System.DateTime)std.AdmissionDate;
+                        if (std.Status == false) //Student Left the school
+                        {
+                            StudentInfo.CurrentStatusComboBox.SelectedItem = "Left";
+                            StudentInfo.LeaveDateDateTimePicker.Value = (System.DateTime)std.LeaveDate;
+                        }
+                        else
+                        {
+                            StudentInfo.CurrentStatusComboBox.SelectedItem = "Currently Enrolled";
+                            StudentInfo.LeaveDateDateTimePicker.Value = DateTime.Now;
+                        }
+                        StudentInfo.PhoneNumberTextBox.Text = std.PhoneNumber;
+                        StudentInfo.Show();
+                    };
+                    this.tableLayoutPanel1.Controls.Add(Btns_Details[buttonDetailsIndex],6,RowNnumberTrace);
+                    buttonDetailsIndex++;
                     RowNnumberTrace++;
                 }
                 this.label5.Text = RequiredStudents.Count + " Numbers of student Found";
@@ -102,15 +129,6 @@ namespace SchoolSystem
                 this.Refresh();
             }
         }
-
-        private void SearchStudent_Load(object sender, EventArgs e)
-        {
-            foreach(Class c in database.Classes)
-            {
-                this.ClassComboBox.Items.Add(c.Name);
-            }
-        }
-
         private void ClassComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             List<Section> RequiredSections = database.Sections.Where(X => X.Class.Name == this.ClassComboBox.SelectedItem.ToString()).ToList();
@@ -127,6 +145,11 @@ namespace SchoolSystem
         private void btnExportToPDF_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SearchStudent_Load(object sender, EventArgs e)
+        {
+            this.ClassComboBox.Items.AddRange(database.Classes.Select(X => X.Name).ToArray());
         }
 
     }

@@ -10,21 +10,13 @@
 namespace SchoolSystem
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Class
+    public partial class sp_helpdiagrams_Result
     {
-        public Class()
-        {
-            this.Courses = new HashSet<Course>();
-            this.Sections = new HashSet<Section>();
-        }
-    
-        public decimal Id { get; set; }
+        public string Database { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-    
-        public virtual ICollection<Course> Courses { get; set; }
-        public virtual ICollection<Section> Sections { get; set; }
+        public int ID { get; set; }
+        public string Owner { get; set; }
+        public int OwnerID { get; set; }
     }
 }

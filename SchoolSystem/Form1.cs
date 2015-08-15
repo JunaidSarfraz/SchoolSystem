@@ -24,6 +24,7 @@ namespace SchoolSystem
             if(treeView1.SelectedNode.Name.Equals("btn_Student_Management"))
             {
                 SearchStudent RequiredScreen = new SearchStudent();
+                RequiredScreen.Header.Width = this.splitContainer1.Panel2.Width;
                 this.splitContainer1.Panel2.Controls.Clear();
                 this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
             }
