@@ -86,19 +86,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbsentReport.cs">
+    <Compile Include="Student_Management\AbsentReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AbsentReport.Designer.cs">
+    <Compile Include="Student_Management\AbsentReport.Designer.cs">
       <DependentUpon>AbsentReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Attandance.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="AttandanceScreen.cs">
+    <Compile Include="Student_Management\AttandanceScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AttandanceScreen.Designer.cs">
+    <Compile Include="Student_Management\AttandanceScreen.Designer.cs">
       <DependentUpon>AttandanceScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Challan.cs">
@@ -107,19 +107,19 @@
     <Compile Include="ChallanToFeeHead.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="CharacterCertificate.cs">
+    <Compile Include="Student_Management\CharacterCertificate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CharacterCertificate.Designer.cs">
+    <Compile Include="Student_Management\CharacterCertificate.Designer.cs">
       <DependentUpon>CharacterCertificate.cs</DependentUpon>
     </Compile>
     <Compile Include="Class.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ClassWiseStrength.cs">
+    <Compile Include="Student_Management\ClassWiseStrength.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClassWiseStrength.Designer.cs">
+    <Compile Include="Student_Management\ClassWiseStrength.Designer.cs">
       <DependentUpon>ClassWiseStrength.cs</DependentUpon>
     </Compile>
     <Compile Include="Course.cs">
@@ -146,10 +146,10 @@
     <Compile Include="Grade.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="leftStudentsDetail.cs">
+    <Compile Include="Student_Management\leftStudentsDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="leftStudentsDetail.Designer.cs">
+    <Compile Include="Student_Management\leftStudentsDetail.Designer.cs">
       <DependentUpon>leftStudentsDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
@@ -170,10 +170,10 @@
     <Compile Include="MonthlyType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="NewAdmission.cs">
+    <Compile Include="Student_Management\NewAdmission.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NewAdmission.Designer.cs">
+    <Compile Include="Student_Management\NewAdmission.Designer.cs">
       <DependentUpon>NewAdmission.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -183,16 +183,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SchoolLeavingCertificate.cs">
+    <Compile Include="Student_Management\SchoolLeavingCertificate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SchoolLeavingCertificate.Designer.cs">
+    <Compile Include="Student_Management\SchoolLeavingCertificate.Designer.cs">
       <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchStudent.cs">
+    <Compile Include="Student_Management\SearchStudent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchStudent.Designer.cs">
+    <Compile Include="Student_Management\SearchStudent.Designer.cs">
       <DependentUpon>SearchStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Section.cs">
@@ -207,10 +207,10 @@
     <Compile Include="Student.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentContacts.cs">
+    <Compile Include="Student_Management\StudentContacts.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StudentContacts.Designer.cs">
+    <Compile Include="Student_Management\StudentContacts.Designer.cs">
       <DependentUpon>StudentContacts.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentToFeeHead.cs">
@@ -225,34 +225,34 @@
     <Compile Include="User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ViewStudentDetails.cs">
+    <Compile Include="Student_Management\ViewStudentDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewStudentDetails.Designer.cs">
+    <Compile Include="Student_Management\ViewStudentDetails.Designer.cs">
       <DependentUpon>ViewStudentDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="WeeklyType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AbsentReport.resx">
+    <EmbeddedResource Include="Student_Management\AbsentReport.resx">
       <DependentUpon>AbsentReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AttandanceScreen.resx">
+    <EmbeddedResource Include="Student_Management\AttandanceScreen.resx">
       <DependentUpon>AttandanceScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CharacterCertificate.resx">
+    <EmbeddedResource Include="Student_Management\CharacterCertificate.resx">
       <DependentUpon>CharacterCertificate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClassWiseStrength.resx">
+    <EmbeddedResource Include="Student_Management\ClassWiseStrength.resx">
       <DependentUpon>ClassWiseStrength.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="leftStudentsDetail.resx">
+    <EmbeddedResource Include="Student_Management\leftStudentsDetail.resx">
       <DependentUpon>leftStudentsDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewAdmission.resx">
+    <EmbeddedResource Include="Student_Management\NewAdmission.resx">
       <DependentUpon>NewAdmission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -260,16 +260,16 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolLeavingCertificate.resx">
+    <EmbeddedResource Include="Student_Management\SchoolLeavingCertificate.resx">
       <DependentUpon>SchoolLeavingCertificate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchStudent.resx">
+    <EmbeddedResource Include="Student_Management\SearchStudent.resx">
       <DependentUpon>SearchStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentContacts.resx">
+    <EmbeddedResource Include="Student_Management\StudentContacts.resx">
       <DependentUpon>StudentContacts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewStudentDetails.resx">
+    <EmbeddedResource Include="Student_Management\ViewStudentDetails.resx">
       <DependentUpon>ViewStudentDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
