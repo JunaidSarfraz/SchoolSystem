@@ -34,6 +34,7 @@ namespace SchoolSystem
         public string Religion { get; set; }
         public Nullable<bool> Status { get; set; }
         public Nullable<System.DateTime> LeaveDate { get; set; }
+        public Nullable<bool> Gender { get; set; }
     
         public virtual ICollection<Attandance> Attandances { get; set; }
         public virtual ICollection<Challan> Challans { get; set; }
@@ -43,8 +44,7 @@ namespace SchoolSystem
 
         public int CompareTo(object obj)
         {
-            return this.Section.Class.Name.CompareTo((obj as Student
-                ).Section.Class.Name);
+            return this.Name.CompareTo(((Student)obj).Name);
         }
     }
 }

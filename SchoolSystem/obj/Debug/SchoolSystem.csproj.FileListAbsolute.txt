@@ -27,3 +27,4 @@ C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\Schoo
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\bin\Debug\SchoolSystem.application
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.exe.manifest
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.application
+C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.ViewStudentDetails.resources
