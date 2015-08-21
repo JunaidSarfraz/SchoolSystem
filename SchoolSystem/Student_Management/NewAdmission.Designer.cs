@@ -35,105 +35,105 @@
             this.UploadButton = new System.Windows.Forms.Button();
             this.NameLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SerialNumberTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RegistrationNumberTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ClassComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.SectionComboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.AdmissionDate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.StudentNameTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ReligionTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.NationalityTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.GenderComboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DateOfBirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.CastTextBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.FatherNameTextBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.FatherCNICTextBox = new System.Windows.Forms.TextBox();
+            this.FatherContactTextBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.MotherNameTextBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.MotherCNICTextBox = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.MotherContactTextBox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.ProfessionTextBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.MonthlyIncomeTextBox = new System.Windows.Forms.TextBox();
+            this.MotherProfessionHouseWifeCheckBox = new System.Windows.Forms.CheckBox();
+            this.MotherProfessionWorkingWomenCheckBox = new System.Windows.Forms.CheckBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.MotherMonthlyIncomeTextBox = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.ContactAddresstextBox1 = new System.Windows.Forms.TextBox();
+            this.ContactAddresstextBox2 = new System.Windows.Forms.TextBox();
+            this.ContactAddresstextBox3 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.ConvanceComboBox = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.DriverNameTextBox = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.DriverContactTextBox = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.OtherConvanceTextBox = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
+            this.WeightTextBox = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.BMITextBox = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.DoctorNameTextBox = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.DoctorContactTextBox = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.HospitalNameTextBox = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.DocumentRequiredcheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.textBox28 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.DateWithFatherSignature = new System.Windows.Forms.DateTimePicker();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.AdmissionTestPassRadioButton = new System.Windows.Forms.RadioButton();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.AdmissionTestMarksTextBox = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.ExcllentTestPerformancecheckBox = new System.Windows.Forms.CheckBox();
+            this.NormalTestPerformancecheckBox = new System.Windows.Forms.CheckBox();
+            this.AboveAverageTestPerformancecheckBox = new System.Windows.Forms.CheckBox();
+            this.AdmissionGrantedCheckBox = new System.Windows.Forms.CheckBox();
+            this.AdmissionRejectedCheckBox = new System.Windows.Forms.CheckBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.ClassOfAdmissionComboBox = new System.Windows.Forms.ComboBox();
+            this.SectionOfAdmissioncomboBox = new System.Windows.Forms.ComboBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.AdmissionTestDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.AdmissionTestFailRadioButton = new System.Windows.Forms.RadioButton();
             this.SubmitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -172,7 +172,7 @@
             this.UploadButton.Location = new System.Drawing.Point(474, 138);
             this.UploadButton.Name = "UploadButton";
             this.UploadButton.Size = new System.Drawing.Size(75, 23);
-            this.UploadButton.TabIndex = 2;
+            this.UploadButton.TabIndex = 52;
             this.UploadButton.Text = "Upload";
             this.UploadButton.UseVisualStyleBackColor = true;
             // 
@@ -195,12 +195,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "SR #";
             // 
-            // textBox1
+            // SerialNumberTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 193);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
-            this.textBox1.TabIndex = 5;
+            this.SerialNumberTextBox.Enabled = false;
+            this.SerialNumberTextBox.Location = new System.Drawing.Point(81, 193);
+            this.SerialNumberTextBox.Name = "SerialNumberTextBox";
+            this.SerialNumberTextBox.Size = new System.Drawing.Size(161, 20);
+            this.SerialNumberTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -211,12 +212,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Registration Number";
             // 
-            // textBox2
+            // RegistrationNumberTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(430, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 20);
-            this.textBox2.TabIndex = 7;
+            this.RegistrationNumberTextBox.Enabled = false;
+            this.RegistrationNumberTextBox.Location = new System.Drawing.Point(430, 193);
+            this.RegistrationNumberTextBox.Name = "RegistrationNumberTextBox";
+            this.RegistrationNumberTextBox.Size = new System.Drawing.Size(161, 20);
+            this.RegistrationNumberTextBox.TabIndex = 2;
             // 
             // label4
             // 
@@ -227,13 +229,13 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Class";
             // 
-            // comboBox1
+            // ClassComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(81, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 21);
-            this.comboBox1.TabIndex = 9;
+            this.ClassComboBox.FormattingEnabled = true;
+            this.ClassComboBox.Location = new System.Drawing.Point(81, 234);
+            this.ClassComboBox.Name = "ClassComboBox";
+            this.ClassComboBox.Size = new System.Drawing.Size(89, 21);
+            this.ClassComboBox.TabIndex = 3;
             // 
             // label5
             // 
@@ -244,13 +246,13 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Section";
             // 
-            // comboBox2
+            // SectionComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(248, 234);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(72, 21);
-            this.comboBox2.TabIndex = 11;
+            this.SectionComboBox.FormattingEnabled = true;
+            this.SectionComboBox.Location = new System.Drawing.Point(248, 234);
+            this.SectionComboBox.Name = "SectionComboBox";
+            this.SectionComboBox.Size = new System.Drawing.Size(72, 21);
+            this.SectionComboBox.TabIndex = 4;
             // 
             // label6
             // 
@@ -261,12 +263,12 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Date";
             // 
-            // dateTimePicker1
+            // AdmissionDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(391, 234);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.AdmissionDate.Location = new System.Drawing.Point(391, 234);
+            this.AdmissionDate.Name = "AdmissionDate";
+            this.AdmissionDate.Size = new System.Drawing.Size(200, 20);
+            this.AdmissionDate.TabIndex = 5;
             // 
             // label7
             // 
@@ -277,12 +279,12 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Student Name";
             // 
-            // textBox3
+            // StudentNameTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(125, 346);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(466, 20);
-            this.textBox3.TabIndex = 15;
+            this.StudentNameTextBox.Location = new System.Drawing.Point(125, 346);
+            this.StudentNameTextBox.Name = "StudentNameTextBox";
+            this.StudentNameTextBox.Size = new System.Drawing.Size(466, 20);
+            this.StudentNameTextBox.TabIndex = 6;
             // 
             // label8
             // 
@@ -293,12 +295,12 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Religion";
             // 
-            // textBox4
+            // ReligionTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(125, 388);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 20);
-            this.textBox4.TabIndex = 17;
+            this.ReligionTextBox.Location = new System.Drawing.Point(125, 388);
+            this.ReligionTextBox.Name = "ReligionTextBox";
+            this.ReligionTextBox.Size = new System.Drawing.Size(97, 20);
+            this.ReligionTextBox.TabIndex = 7;
             // 
             // label9
             // 
@@ -309,12 +311,12 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Nationality";
             // 
-            // textBox5
+            // NationalityTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(307, 388);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 19;
+            this.NationalityTextBox.Location = new System.Drawing.Point(307, 388);
+            this.NationalityTextBox.Name = "NationalityTextBox";
+            this.NationalityTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NationalityTextBox.TabIndex = 8;
             // 
             // label10
             // 
@@ -325,16 +327,16 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Gender";
             // 
-            // comboBox3
+            // GenderComboBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.GenderComboBox.FormattingEnabled = true;
+            this.GenderComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox3.Location = new System.Drawing.Point(476, 387);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(97, 21);
-            this.comboBox3.TabIndex = 21;
+            this.GenderComboBox.Location = new System.Drawing.Point(476, 387);
+            this.GenderComboBox.Name = "GenderComboBox";
+            this.GenderComboBox.Size = new System.Drawing.Size(97, 21);
+            this.GenderComboBox.TabIndex = 9;
             // 
             // label11
             // 
@@ -349,18 +351,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(43, 437);
+            this.label12.Location = new System.Drawing.Point(43, 433);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 13);
             this.label12.TabIndex = 23;
             this.label12.Text = "Date Of Birth";
             // 
-            // dateTimePicker2
+            // DateOfBirthDateTimePicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(125, 431);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 24;
+            this.DateOfBirthDateTimePicker.Location = new System.Drawing.Point(125, 431);
+            this.DateOfBirthDateTimePicker.Name = "DateOfBirthDateTimePicker";
+            this.DateOfBirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.DateOfBirthDateTimePicker.TabIndex = 10;
             // 
             // label13
             // 
@@ -371,12 +373,12 @@
             this.label13.TabIndex = 25;
             this.label13.Text = "Cast";
             // 
-            // textBox6
+            // CastTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(391, 430);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 20);
-            this.textBox6.TabIndex = 26;
+            this.CastTextBox.Location = new System.Drawing.Point(391, 430);
+            this.CastTextBox.Name = "CastTextBox";
+            this.CastTextBox.Size = new System.Drawing.Size(185, 20);
+            this.CastTextBox.TabIndex = 11;
             // 
             // label14
             // 
@@ -387,35 +389,36 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "Father Name";
             // 
-            // textBox7
+            // FatherNameTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(125, 515);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(466, 20);
-            this.textBox7.TabIndex = 28;
+            this.FatherNameTextBox.Location = new System.Drawing.Point(125, 515);
+            this.FatherNameTextBox.Name = "FatherNameTextBox";
+            this.FatherNameTextBox.Size = new System.Drawing.Size(466, 20);
+            this.FatherNameTextBox.TabIndex = 12;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(46, 559);
+            this.label15.Location = new System.Drawing.Point(34, 555);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 13);
+            this.label15.Size = new System.Drawing.Size(84, 13);
             this.label15.TabIndex = 29;
-            this.label15.Text = "CNIC";
+            this.label15.Text = "CNIC / Passport";
             // 
-            // textBox8
+            // FatherCNICTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(125, 552);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(203, 20);
-            this.textBox8.TabIndex = 30;
+            this.FatherCNICTextBox.Location = new System.Drawing.Point(125, 552);
+            this.FatherCNICTextBox.Name = "FatherCNICTextBox";
+            this.FatherCNICTextBox.Size = new System.Drawing.Size(203, 20);
+            this.FatherCNICTextBox.TabIndex = 13;
+            this.FatherCNICTextBox.TextChanged += new System.EventHandler(this.FatherCNICTextBox_TextChanged);
             // 
-            // textBox9
+            // FatherContactTextBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(417, 552);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(174, 20);
-            this.textBox9.TabIndex = 31;
+            this.FatherContactTextBox.Location = new System.Drawing.Point(417, 552);
+            this.FatherContactTextBox.Name = "FatherContactTextBox";
+            this.FatherContactTextBox.Size = new System.Drawing.Size(174, 20);
+            this.FatherContactTextBox.TabIndex = 14;
             // 
             // label16
             // 
@@ -435,28 +438,28 @@
             this.label17.TabIndex = 33;
             this.label17.Text = "Mother Name";
             // 
-            // textBox10
+            // MotherNameTextBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(122, 624);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(468, 20);
-            this.textBox10.TabIndex = 34;
+            this.MotherNameTextBox.Location = new System.Drawing.Point(122, 624);
+            this.MotherNameTextBox.Name = "MotherNameTextBox";
+            this.MotherNameTextBox.Size = new System.Drawing.Size(468, 20);
+            this.MotherNameTextBox.TabIndex = 17;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(43, 662);
+            this.label18.Location = new System.Drawing.Point(27, 662);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(32, 13);
+            this.label18.Size = new System.Drawing.Size(84, 13);
             this.label18.TabIndex = 35;
-            this.label18.Text = "CNIC";
+            this.label18.Text = "CNIC / Passport";
             // 
-            // textBox11
+            // MotherCNICTextBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(122, 659);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(203, 20);
-            this.textBox11.TabIndex = 36;
+            this.MotherCNICTextBox.Location = new System.Drawing.Point(122, 659);
+            this.MotherCNICTextBox.Name = "MotherCNICTextBox";
+            this.MotherCNICTextBox.Size = new System.Drawing.Size(203, 20);
+            this.MotherCNICTextBox.TabIndex = 18;
             // 
             // label19
             // 
@@ -467,12 +470,12 @@
             this.label19.TabIndex = 37;
             this.label19.Text = "Contact";
             // 
-            // textBox12
+            // MotherContactTextBox
             // 
-            this.textBox12.Location = new System.Drawing.Point(417, 659);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(174, 20);
-            this.textBox12.TabIndex = 38;
+            this.MotherContactTextBox.Location = new System.Drawing.Point(417, 659);
+            this.MotherContactTextBox.Name = "MotherContactTextBox";
+            this.MotherContactTextBox.Size = new System.Drawing.Size(174, 20);
+            this.MotherContactTextBox.TabIndex = 19;
             // 
             // label20
             // 
@@ -483,12 +486,12 @@
             this.label20.TabIndex = 39;
             this.label20.Text = "Profession";
             // 
-            // textBox13
+            // ProfessionTextBox
             // 
-            this.textBox13.Location = new System.Drawing.Point(125, 591);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(203, 20);
-            this.textBox13.TabIndex = 40;
+            this.ProfessionTextBox.Location = new System.Drawing.Point(125, 591);
+            this.ProfessionTextBox.Name = "ProfessionTextBox";
+            this.ProfessionTextBox.Size = new System.Drawing.Size(203, 20);
+            this.ProfessionTextBox.TabIndex = 15;
             // 
             // label21
             // 
@@ -499,32 +502,32 @@
             this.label21.TabIndex = 41;
             this.label21.Text = "Monthly Income";
             // 
-            // textBox14
+            // MonthlyIncomeTextBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(417, 591);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(174, 20);
-            this.textBox14.TabIndex = 42;
+            this.MonthlyIncomeTextBox.Location = new System.Drawing.Point(417, 591);
+            this.MonthlyIncomeTextBox.Name = "MonthlyIncomeTextBox";
+            this.MonthlyIncomeTextBox.Size = new System.Drawing.Size(174, 20);
+            this.MonthlyIncomeTextBox.TabIndex = 16;
             // 
-            // checkBox1
+            // MotherProfessionHouseWifeCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(46, 704);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 17);
-            this.checkBox1.TabIndex = 43;
-            this.checkBox1.Text = "House Wife";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.MotherProfessionHouseWifeCheckBox.AutoSize = true;
+            this.MotherProfessionHouseWifeCheckBox.Location = new System.Drawing.Point(46, 704);
+            this.MotherProfessionHouseWifeCheckBox.Name = "MotherProfessionHouseWifeCheckBox";
+            this.MotherProfessionHouseWifeCheckBox.Size = new System.Drawing.Size(82, 17);
+            this.MotherProfessionHouseWifeCheckBox.TabIndex = 20;
+            this.MotherProfessionHouseWifeCheckBox.Text = "House Wife";
+            this.MotherProfessionHouseWifeCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // MotherProfessionWorkingWomenCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(162, 704);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(106, 17);
-            this.checkBox2.TabIndex = 44;
-            this.checkBox2.Text = "Working Woman";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.MotherProfessionWorkingWomenCheckBox.AutoSize = true;
+            this.MotherProfessionWorkingWomenCheckBox.Location = new System.Drawing.Point(162, 704);
+            this.MotherProfessionWorkingWomenCheckBox.Name = "MotherProfessionWorkingWomenCheckBox";
+            this.MotherProfessionWorkingWomenCheckBox.Size = new System.Drawing.Size(106, 17);
+            this.MotherProfessionWorkingWomenCheckBox.TabIndex = 21;
+            this.MotherProfessionWorkingWomenCheckBox.Text = "Working Woman";
+            this.MotherProfessionWorkingWomenCheckBox.UseVisualStyleBackColor = true;
             // 
             // label22
             // 
@@ -535,12 +538,12 @@
             this.label22.TabIndex = 45;
             this.label22.Text = "MonthlyIncome";
             // 
-            // textBox15
+            // MotherMonthlyIncomeTextBox
             // 
-            this.textBox15.Location = new System.Drawing.Point(417, 701);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(174, 20);
-            this.textBox15.TabIndex = 46;
+            this.MotherMonthlyIncomeTextBox.Location = new System.Drawing.Point(417, 701);
+            this.MotherMonthlyIncomeTextBox.Name = "MotherMonthlyIncomeTextBox";
+            this.MotherMonthlyIncomeTextBox.Size = new System.Drawing.Size(174, 20);
+            this.MotherMonthlyIncomeTextBox.TabIndex = 22;
             // 
             // label23
             // 
@@ -552,26 +555,26 @@
             this.label23.TabIndex = 47;
             this.label23.Text = "Contact Address";
             // 
-            // textBox16
+            // ContactAddresstextBox1
             // 
-            this.textBox16.Location = new System.Drawing.Point(3, 779);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(619, 20);
-            this.textBox16.TabIndex = 48;
+            this.ContactAddresstextBox1.Location = new System.Drawing.Point(3, 779);
+            this.ContactAddresstextBox1.Name = "ContactAddresstextBox1";
+            this.ContactAddresstextBox1.Size = new System.Drawing.Size(619, 20);
+            this.ContactAddresstextBox1.TabIndex = 23;
             // 
-            // textBox17
+            // ContactAddresstextBox2
             // 
-            this.textBox17.Location = new System.Drawing.Point(3, 805);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(619, 20);
-            this.textBox17.TabIndex = 49;
+            this.ContactAddresstextBox2.Location = new System.Drawing.Point(3, 805);
+            this.ContactAddresstextBox2.Name = "ContactAddresstextBox2";
+            this.ContactAddresstextBox2.Size = new System.Drawing.Size(619, 20);
+            this.ContactAddresstextBox2.TabIndex = 24;
             // 
-            // textBox18
+            // ContactAddresstextBox3
             // 
-            this.textBox18.Location = new System.Drawing.Point(3, 831);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(619, 20);
-            this.textBox18.TabIndex = 50;
+            this.ContactAddresstextBox3.Location = new System.Drawing.Point(3, 831);
+            this.ContactAddresstextBox3.Name = "ContactAddresstextBox3";
+            this.ContactAddresstextBox3.Size = new System.Drawing.Size(619, 20);
+            this.ContactAddresstextBox3.TabIndex = 25;
             // 
             // label24
             // 
@@ -582,18 +585,18 @@
             this.label24.TabIndex = 51;
             this.label24.Text = "Convance";
             // 
-            // comboBox4
+            // ConvanceComboBox
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.ConvanceComboBox.FormattingEnabled = true;
+            this.ConvanceComboBox.Items.AddRange(new object[] {
             "Foot",
             "Parrents",
             "School Van",
             "Other"});
-            this.comboBox4.Location = new System.Drawing.Point(65, 868);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 52;
+            this.ConvanceComboBox.Location = new System.Drawing.Point(65, 868);
+            this.ConvanceComboBox.Name = "ConvanceComboBox";
+            this.ConvanceComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ConvanceComboBox.TabIndex = 26;
             // 
             // label25
             // 
@@ -604,12 +607,12 @@
             this.label25.TabIndex = 53;
             this.label25.Text = "Driver Name";
             // 
-            // textBox19
+            // DriverNameTextBox
             // 
-            this.textBox19.Location = new System.Drawing.Point(357, 868);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(265, 20);
-            this.textBox19.TabIndex = 54;
+            this.DriverNameTextBox.Location = new System.Drawing.Point(357, 868);
+            this.DriverNameTextBox.Name = "DriverNameTextBox";
+            this.DriverNameTextBox.Size = new System.Drawing.Size(265, 20);
+            this.DriverNameTextBox.TabIndex = 27;
             // 
             // label26
             // 
@@ -620,12 +623,12 @@
             this.label26.TabIndex = 55;
             this.label26.Text = "Driver Contact";
             // 
-            // textBox20
+            // DriverContactTextBox
             // 
-            this.textBox20.Location = new System.Drawing.Point(85, 905);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(170, 20);
-            this.textBox20.TabIndex = 56;
+            this.DriverContactTextBox.Location = new System.Drawing.Point(85, 905);
+            this.DriverContactTextBox.Name = "DriverContactTextBox";
+            this.DriverContactTextBox.Size = new System.Drawing.Size(170, 20);
+            this.DriverContactTextBox.TabIndex = 28;
             // 
             // label27
             // 
@@ -636,12 +639,12 @@
             this.label27.TabIndex = 57;
             this.label27.Text = "Other (Specify)";
             // 
-            // textBox21
+            // OtherConvanceTextBox
             // 
-            this.textBox21.Location = new System.Drawing.Point(357, 908);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(265, 20);
-            this.textBox21.TabIndex = 58;
+            this.OtherConvanceTextBox.Location = new System.Drawing.Point(357, 908);
+            this.OtherConvanceTextBox.Name = "OtherConvanceTextBox";
+            this.OtherConvanceTextBox.Size = new System.Drawing.Size(265, 20);
+            this.OtherConvanceTextBox.TabIndex = 29;
             // 
             // label28
             // 
@@ -662,28 +665,30 @@
             this.label29.TabIndex = 60;
             this.label29.Text = "Height";
             // 
-            // textBox22
+            // HeightTextBox
             // 
-            this.textBox22.Location = new System.Drawing.Point(46, 989);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(140, 20);
-            this.textBox22.TabIndex = 61;
+            this.HeightTextBox.Location = new System.Drawing.Point(46, 989);
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(140, 20);
+            this.HeightTextBox.TabIndex = 30;
+            this.HeightTextBox.TextChanged += new System.EventHandler(this.HeightTextBox_TextChanged);
             // 
-            // textBox23
+            // WeightTextBox
             // 
-            this.textBox23.Location = new System.Drawing.Point(263, 989);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(140, 20);
-            this.textBox23.TabIndex = 62;
+            this.WeightTextBox.Location = new System.Drawing.Point(263, 989);
+            this.WeightTextBox.Name = "WeightTextBox";
+            this.WeightTextBox.Size = new System.Drawing.Size(140, 20);
+            this.WeightTextBox.TabIndex = 31;
+            this.WeightTextBox.TextChanged += new System.EventHandler(this.WeightTextBox_TextChanged);
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(222, 992);
+            this.label30.Location = new System.Drawing.Point(213, 992);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(35, 13);
+            this.label30.Size = new System.Drawing.Size(41, 13);
             this.label30.TabIndex = 63;
-            this.label30.Text = "Wight";
+            this.label30.Text = "Weight";
             // 
             // label31
             // 
@@ -694,12 +699,12 @@
             this.label31.TabIndex = 64;
             this.label31.Text = "BMI";
             // 
-            // textBox24
+            // BMITextBox
             // 
-            this.textBox24.Location = new System.Drawing.Point(459, 989);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(144, 20);
-            this.textBox24.TabIndex = 65;
+            this.BMITextBox.Location = new System.Drawing.Point(459, 989);
+            this.BMITextBox.Name = "BMITextBox";
+            this.BMITextBox.Size = new System.Drawing.Size(144, 20);
+            this.BMITextBox.TabIndex = 32;
             // 
             // label32
             // 
@@ -710,12 +715,12 @@
             this.label32.TabIndex = 66;
             this.label32.Text = "Doctor Name";
             // 
-            // textBox25
+            // DoctorNameTextBox
             // 
-            this.textBox25.Location = new System.Drawing.Point(79, 1023);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(212, 20);
-            this.textBox25.TabIndex = 67;
+            this.DoctorNameTextBox.Location = new System.Drawing.Point(79, 1023);
+            this.DoctorNameTextBox.Name = "DoctorNameTextBox";
+            this.DoctorNameTextBox.Size = new System.Drawing.Size(212, 20);
+            this.DoctorNameTextBox.TabIndex = 33;
             // 
             // label33
             // 
@@ -726,12 +731,12 @@
             this.label33.TabIndex = 68;
             this.label33.Text = "Doctor Contact";
             // 
-            // textBox26
+            // DoctorContactTextBox
             // 
-            this.textBox26.Location = new System.Drawing.Point(391, 1023);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(212, 20);
-            this.textBox26.TabIndex = 69;
+            this.DoctorContactTextBox.Location = new System.Drawing.Point(391, 1023);
+            this.DoctorContactTextBox.Name = "DoctorContactTextBox";
+            this.DoctorContactTextBox.Size = new System.Drawing.Size(212, 20);
+            this.DoctorContactTextBox.TabIndex = 34;
             // 
             // label34
             // 
@@ -742,12 +747,12 @@
             this.label34.TabIndex = 70;
             this.label34.Text = "Hospital";
             // 
-            // textBox27
+            // HospitalNameTextBox
             // 
-            this.textBox27.Location = new System.Drawing.Point(46, 1055);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(557, 20);
-            this.textBox27.TabIndex = 71;
+            this.HospitalNameTextBox.Location = new System.Drawing.Point(54, 1055);
+            this.HospitalNameTextBox.Name = "HospitalNameTextBox";
+            this.HospitalNameTextBox.Size = new System.Drawing.Size(557, 20);
+            this.HospitalNameTextBox.TabIndex = 35;
             // 
             // label35
             // 
@@ -759,18 +764,19 @@
             this.label35.TabIndex = 72;
             this.label35.Text = "Documents Required at the time of Admission";
             // 
-            // checkedListBox1
+            // DocumentRequiredcheckedListBox
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.DocumentRequiredcheckedListBox.CheckOnClick = true;
+            this.DocumentRequiredcheckedListBox.FormattingEnabled = true;
+            this.DocumentRequiredcheckedListBox.Items.AddRange(new object[] {
             "Child Pictures (3)",
             "Father CNIC",
             "Birth Certificate (issued by NADRA)",
             "School Leaving Certificate (if aplicable)"});
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 1124);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(619, 64);
-            this.checkedListBox1.TabIndex = 73;
+            this.DocumentRequiredcheckedListBox.Location = new System.Drawing.Point(6, 1124);
+            this.DocumentRequiredcheckedListBox.Name = "DocumentRequiredcheckedListBox";
+            this.DocumentRequiredcheckedListBox.Size = new System.Drawing.Size(618, 64);
+            this.DocumentRequiredcheckedListBox.TabIndex = 36;
             // 
             // label36
             // 
@@ -805,14 +811,14 @@
             this.textBox28.Location = new System.Drawing.Point(101, 1282);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(180, 20);
-            this.textBox28.TabIndex = 77;
+            this.textBox28.TabIndex = 37;
             // 
-            // dateTimePicker3
+            // DateWithFatherSignature
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(391, 1282);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 78;
+            this.DateWithFatherSignature.Location = new System.Drawing.Point(391, 1282);
+            this.DateWithFatherSignature.Name = "DateWithFatherSignature";
+            this.DateWithFatherSignature.Size = new System.Drawing.Size(200, 20);
+            this.DateWithFatherSignature.TabIndex = 38;
             // 
             // label39
             // 
@@ -842,15 +848,15 @@
             this.label41.TabIndex = 81;
             this.label41.Text = "Admission Test";
             // 
-            // radioButton1
+            // AdmissionTestPassRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(162, 1357);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 82;
-            this.radioButton1.Text = "Pass";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.AdmissionTestPassRadioButton.AutoSize = true;
+            this.AdmissionTestPassRadioButton.Location = new System.Drawing.Point(162, 1357);
+            this.AdmissionTestPassRadioButton.Name = "AdmissionTestPassRadioButton";
+            this.AdmissionTestPassRadioButton.Size = new System.Drawing.Size(48, 17);
+            this.AdmissionTestPassRadioButton.TabIndex = 39;
+            this.AdmissionTestPassRadioButton.Text = "Pass";
+            this.AdmissionTestPassRadioButton.UseVisualStyleBackColor = true;
             // 
             // label42
             // 
@@ -871,12 +877,12 @@
             this.label43.TabIndex = 85;
             this.label43.Text = "Test Marks";
             // 
-            // textBox29
+            // AdmissionTestMarksTextBox
             // 
-            this.textBox29.Location = new System.Drawing.Point(73, 1428);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(100, 20);
-            this.textBox29.TabIndex = 86;
+            this.AdmissionTestMarksTextBox.Location = new System.Drawing.Point(73, 1428);
+            this.AdmissionTestMarksTextBox.Name = "AdmissionTestMarksTextBox";
+            this.AdmissionTestMarksTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AdmissionTestMarksTextBox.TabIndex = 42;
             // 
             // label44
             // 
@@ -887,55 +893,55 @@
             this.label44.TabIndex = 87;
             this.label44.Text = "Assessment";
             // 
-            // checkBox3
+            // ExcllentTestPerformancecheckBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(316, 1430);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(69, 17);
-            this.checkBox3.TabIndex = 88;
-            this.checkBox3.Text = "Excellent";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ExcllentTestPerformancecheckBox.AutoSize = true;
+            this.ExcllentTestPerformancecheckBox.Location = new System.Drawing.Point(316, 1430);
+            this.ExcllentTestPerformancecheckBox.Name = "ExcllentTestPerformancecheckBox";
+            this.ExcllentTestPerformancecheckBox.Size = new System.Drawing.Size(69, 17);
+            this.ExcllentTestPerformancecheckBox.TabIndex = 43;
+            this.ExcllentTestPerformancecheckBox.Text = "Excellent";
+            this.ExcllentTestPerformancecheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // NormalTestPerformancecheckBox
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(394, 1430);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(59, 17);
-            this.checkBox4.TabIndex = 89;
-            this.checkBox4.Text = "Normal";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.NormalTestPerformancecheckBox.AutoSize = true;
+            this.NormalTestPerformancecheckBox.Location = new System.Drawing.Point(394, 1430);
+            this.NormalTestPerformancecheckBox.Name = "NormalTestPerformancecheckBox";
+            this.NormalTestPerformancecheckBox.Size = new System.Drawing.Size(59, 17);
+            this.NormalTestPerformancecheckBox.TabIndex = 44;
+            this.NormalTestPerformancecheckBox.Text = "Normal";
+            this.NormalTestPerformancecheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // AboveAverageTestPerformancecheckBox
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(474, 1430);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(100, 17);
-            this.checkBox5.TabIndex = 90;
-            this.checkBox5.Text = "Above Average";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.AboveAverageTestPerformancecheckBox.AutoSize = true;
+            this.AboveAverageTestPerformancecheckBox.Location = new System.Drawing.Point(474, 1430);
+            this.AboveAverageTestPerformancecheckBox.Name = "AboveAverageTestPerformancecheckBox";
+            this.AboveAverageTestPerformancecheckBox.Size = new System.Drawing.Size(100, 17);
+            this.AboveAverageTestPerformancecheckBox.TabIndex = 45;
+            this.AboveAverageTestPerformancecheckBox.Text = "Above Average";
+            this.AboveAverageTestPerformancecheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // AdmissionGrantedCheckBox
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(142, 1478);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(112, 17);
-            this.checkBox6.TabIndex = 91;
-            this.checkBox6.Text = "Admission granted";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.AdmissionGrantedCheckBox.AutoSize = true;
+            this.AdmissionGrantedCheckBox.Location = new System.Drawing.Point(142, 1478);
+            this.AdmissionGrantedCheckBox.Name = "AdmissionGrantedCheckBox";
+            this.AdmissionGrantedCheckBox.Size = new System.Drawing.Size(112, 17);
+            this.AdmissionGrantedCheckBox.TabIndex = 46;
+            this.AdmissionGrantedCheckBox.Text = "Admission granted";
+            this.AdmissionGrantedCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // AdmissionRejectedCheckBox
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(391, 1478);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(119, 17);
-            this.checkBox7.TabIndex = 92;
-            this.checkBox7.Text = "Admission Rejected";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.AdmissionRejectedCheckBox.AutoSize = true;
+            this.AdmissionRejectedCheckBox.Location = new System.Drawing.Point(391, 1478);
+            this.AdmissionRejectedCheckBox.Name = "AdmissionRejectedCheckBox";
+            this.AdmissionRejectedCheckBox.Size = new System.Drawing.Size(119, 17);
+            this.AdmissionRejectedCheckBox.TabIndex = 47;
+            this.AdmissionRejectedCheckBox.Text = "Admission Rejected";
+            this.AdmissionRejectedCheckBox.UseVisualStyleBackColor = true;
             // 
             // label45
             // 
@@ -964,21 +970,21 @@
             this.label47.TabIndex = 95;
             this.label47.Text = "Section";
             // 
-            // comboBox5
+            // ClassOfAdmissionComboBox
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(197, 1529);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(106, 21);
-            this.comboBox5.TabIndex = 96;
+            this.ClassOfAdmissionComboBox.FormattingEnabled = true;
+            this.ClassOfAdmissionComboBox.Location = new System.Drawing.Point(197, 1529);
+            this.ClassOfAdmissionComboBox.Name = "ClassOfAdmissionComboBox";
+            this.ClassOfAdmissionComboBox.Size = new System.Drawing.Size(106, 21);
+            this.ClassOfAdmissionComboBox.TabIndex = 48;
             // 
-            // comboBox6
+            // SectionOfAdmissioncomboBox
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(383, 1529);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 97;
+            this.SectionOfAdmissioncomboBox.FormattingEnabled = true;
+            this.SectionOfAdmissioncomboBox.Location = new System.Drawing.Point(383, 1529);
+            this.SectionOfAdmissioncomboBox.Name = "SectionOfAdmissioncomboBox";
+            this.SectionOfAdmissioncomboBox.Size = new System.Drawing.Size(121, 21);
+            this.SectionOfAdmissioncomboBox.TabIndex = 49;
             // 
             // textBox30
             // 
@@ -986,7 +992,7 @@
             this.textBox30.Multiline = true;
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(164, 31);
-            this.textBox30.TabIndex = 98;
+            this.textBox30.TabIndex = 50;
             // 
             // textBox31
             // 
@@ -994,7 +1000,7 @@
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(164, 31);
-            this.textBox31.TabIndex = 99;
+            this.textBox31.TabIndex = 51;
             // 
             // label48
             // 
@@ -1023,29 +1029,29 @@
             this.label50.TabIndex = 102;
             this.label50.Text = "Test Date";
             // 
-            // dateTimePicker4
+            // AdmissionTestDateTimePicker
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(357, 1353);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker4.TabIndex = 103;
+            this.AdmissionTestDateTimePicker.Location = new System.Drawing.Point(357, 1353);
+            this.AdmissionTestDateTimePicker.Name = "AdmissionTestDateTimePicker";
+            this.AdmissionTestDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.AdmissionTestDateTimePicker.TabIndex = 41;
             // 
-            // radioButton3
+            // AdmissionTestFailRadioButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(227, 1357);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(41, 17);
-            this.radioButton3.TabIndex = 83;
-            this.radioButton3.Text = "Fail";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.AdmissionTestFailRadioButton.AutoSize = true;
+            this.AdmissionTestFailRadioButton.Location = new System.Drawing.Point(227, 1357);
+            this.AdmissionTestFailRadioButton.Name = "AdmissionTestFailRadioButton";
+            this.AdmissionTestFailRadioButton.Size = new System.Drawing.Size(41, 17);
+            this.AdmissionTestFailRadioButton.TabIndex = 40;
+            this.AdmissionTestFailRadioButton.Text = "Fail";
+            this.AdmissionTestFailRadioButton.UseVisualStyleBackColor = true;
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(417, 1649);
+            this.SubmitButton.Location = new System.Drawing.Point(419, 1643);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(164, 32);
-            this.SubmitButton.TabIndex = 104;
+            this.SubmitButton.TabIndex = 53;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
             // 
@@ -1055,105 +1061,105 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.Controls.Add(this.SubmitButton);
-            this.Controls.Add(this.dateTimePicker4);
+            this.Controls.Add(this.AdmissionTestDateTimePicker);
             this.Controls.Add(this.label50);
             this.Controls.Add(this.label49);
             this.Controls.Add(this.label48);
             this.Controls.Add(this.textBox31);
             this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.SectionOfAdmissioncomboBox);
+            this.Controls.Add(this.ClassOfAdmissionComboBox);
             this.Controls.Add(this.label47);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.label45);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.AdmissionRejectedCheckBox);
+            this.Controls.Add(this.AdmissionGrantedCheckBox);
+            this.Controls.Add(this.AboveAverageTestPerformancecheckBox);
+            this.Controls.Add(this.NormalTestPerformancecheckBox);
+            this.Controls.Add(this.ExcllentTestPerformancecheckBox);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.textBox29);
+            this.Controls.Add(this.AdmissionTestMarksTextBox);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label42);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.AdmissionTestFailRadioButton);
+            this.Controls.Add(this.AdmissionTestPassRadioButton);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
-            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.DateWithFatherSignature);
             this.Controls.Add(this.textBox28);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.DocumentRequiredcheckedListBox);
             this.Controls.Add(this.label35);
-            this.Controls.Add(this.textBox27);
+            this.Controls.Add(this.HospitalNameTextBox);
             this.Controls.Add(this.label34);
-            this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.DoctorContactTextBox);
             this.Controls.Add(this.label33);
-            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.DoctorNameTextBox);
             this.Controls.Add(this.label32);
-            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.BMITextBox);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.WeightTextBox);
+            this.Controls.Add(this.HeightTextBox);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
-            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.OtherConvanceTextBox);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.DriverContactTextBox);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.DriverNameTextBox);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.ConvanceComboBox);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.ContactAddresstextBox3);
+            this.Controls.Add(this.ContactAddresstextBox2);
+            this.Controls.Add(this.ContactAddresstextBox1);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.MotherMonthlyIncomeTextBox);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.MotherProfessionWorkingWomenCheckBox);
+            this.Controls.Add(this.MotherProfessionHouseWifeCheckBox);
+            this.Controls.Add(this.MonthlyIncomeTextBox);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.ProfessionTextBox);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.MotherContactTextBox);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.MotherCNICTextBox);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.MotherNameTextBox);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.FatherContactTextBox);
+            this.Controls.Add(this.FatherCNICTextBox);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.FatherNameTextBox);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.CastTextBox);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.DateOfBirthDateTimePicker);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.GenderComboBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.NationalityTextBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.ReligionTextBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.StudentNameTextBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.AdmissionDate);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.SectionComboBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ClassComboBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RegistrationNumberTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SerialNumberTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.UploadButton);
@@ -1178,105 +1184,105 @@
         private System.Windows.Forms.Button UploadButton;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox SerialNumberTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RegistrationNumberTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ClassComboBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox SectionComboBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker AdmissionDate;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox StudentNameTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ReligionTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox NationalityTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox GenderComboBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker DateOfBirthDateTimePicker;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox CastTextBox;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox FatherNameTextBox;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox FatherCNICTextBox;
+        private System.Windows.Forms.TextBox FatherContactTextBox;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox MotherNameTextBox;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox MotherCNICTextBox;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox MotherContactTextBox;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox ProfessionTextBox;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TextBox MonthlyIncomeTextBox;
+        private System.Windows.Forms.CheckBox MotherProfessionHouseWifeCheckBox;
+        private System.Windows.Forms.CheckBox MotherProfessionWorkingWomenCheckBox;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox MotherMonthlyIncomeTextBox;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox ContactAddresstextBox1;
+        private System.Windows.Forms.TextBox ContactAddresstextBox2;
+        private System.Windows.Forms.TextBox ContactAddresstextBox3;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox ConvanceComboBox;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox DriverNameTextBox;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox DriverContactTextBox;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox OtherConvanceTextBox;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox HeightTextBox;
+        private System.Windows.Forms.TextBox WeightTextBox;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox BMITextBox;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox DoctorNameTextBox;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox DoctorContactTextBox;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox HospitalNameTextBox;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox DocumentRequiredcheckedListBox;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker DateWithFatherSignature;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton AdmissionTestPassRadioButton;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox AdmissionTestMarksTextBox;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox ExcllentTestPerformancecheckBox;
+        private System.Windows.Forms.CheckBox NormalTestPerformancecheckBox;
+        private System.Windows.Forms.CheckBox AboveAverageTestPerformancecheckBox;
+        private System.Windows.Forms.CheckBox AdmissionGrantedCheckBox;
+        private System.Windows.Forms.CheckBox AdmissionRejectedCheckBox;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox ClassOfAdmissionComboBox;
+        private System.Windows.Forms.ComboBox SectionOfAdmissioncomboBox;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.TextBox textBox31;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.DateTimePicker AdmissionTestDateTimePicker;
+        private System.Windows.Forms.RadioButton AdmissionTestFailRadioButton;
         private System.Windows.Forms.Button SubmitButton;
 
     }

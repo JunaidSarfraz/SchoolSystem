@@ -21,7 +21,9 @@ namespace SchoolSystem
         {
             this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.treeView1.Width = this.treeView1.Width - 20;
             this.FormClosed += Form1Closed;
+            this.Refresh();
         }
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {

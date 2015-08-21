@@ -244,7 +244,7 @@
             treeNode31,
             treeNode39,
             treeNode44});
-            this.treeView1.Size = new System.Drawing.Size(270, 711);
+            this.treeView1.Size = new System.Drawing.Size(200, 711);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
