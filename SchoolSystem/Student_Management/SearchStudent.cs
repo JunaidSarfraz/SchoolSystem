@@ -94,6 +94,7 @@ namespace SchoolSystem
                     {
                         ViewStudentDetails StudentInfo = new ViewStudentDetails();
                         StudentInfo.RollNumberTextBox.Text = std.RollNumber;
+                        StudentInfo.RollNumberTextBox.Enabled = false;
                         StudentInfo.StudentNameTextBox.Text = std.Name;
                         StudentInfo.FatherNameTextBox.Text = std.FatherName;
                         if (std.Gender == false) //it means Gender is male

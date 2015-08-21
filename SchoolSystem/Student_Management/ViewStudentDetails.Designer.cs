@@ -41,16 +41,16 @@
             this.RollNumberTextBox = new System.Windows.Forms.MaskedTextBox();
             this.StudentNameTextBox = new System.Windows.Forms.MaskedTextBox();
             this.FatherNameTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.PhoneNumberTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.AdmissionDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.LeaveDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CurrentStatusComboBox = new System.Windows.Forms.ComboBox();
-            this.ImageUploadButton = new System.Windows.Forms.Button();
             this.GenderComboBox = new System.Windows.Forms.ComboBox();
             this.ClassComboBox = new System.Windows.Forms.ComboBox();
             this.SectionComboBox = new System.Windows.Forms.ComboBox();
+            this.AdmissionDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.CurrentStatusComboBox = new System.Windows.Forms.ComboBox();
+            this.PhoneNumberTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.LeaveDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ImageUploadButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,7 +171,7 @@
             this.PhoneNumberTextBox.Location = new System.Drawing.Point(89, 327);
             this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
             this.PhoneNumberTextBox.Size = new System.Drawing.Size(183, 20);
-            this.PhoneNumberTextBox.TabIndex = 17;
+            this.PhoneNumberTextBox.TabIndex = 20;
             // 
             // label11
             // 
@@ -179,7 +179,7 @@
             this.label11.Location = new System.Drawing.Point(5, 334);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 13);
-            this.label11.TabIndex = 6;
+            this.label11.TabIndex = 20;
             this.label11.Text = "Phone Number";
             // 
             // AdmissionDateDateTimePicker
@@ -194,7 +194,7 @@
             this.LeaveDateDateTimePicker.Location = new System.Drawing.Point(394, 327);
             this.LeaveDateDateTimePicker.Name = "LeaveDateDateTimePicker";
             this.LeaveDateDateTimePicker.Size = new System.Drawing.Size(183, 20);
-            this.LeaveDateDateTimePicker.TabIndex = 19;
+            this.LeaveDateDateTimePicker.TabIndex = 21;
             // 
             // label5
             // 
@@ -202,7 +202,6 @@
             this.label5.Location = new System.Drawing.Point(293, 334);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
-            this.label5.TabIndex = 11;
             this.label5.Text = "Leaving Date";
             // 
             // CurrentStatusComboBox
@@ -214,14 +213,14 @@
             this.CurrentStatusComboBox.Location = new System.Drawing.Point(394, 293);
             this.CurrentStatusComboBox.Name = "CurrentStatusComboBox";
             this.CurrentStatusComboBox.Size = new System.Drawing.Size(183, 21);
-            this.CurrentStatusComboBox.TabIndex = 20;
+            this.CurrentStatusComboBox.TabIndex = 19;
             // 
             // ImageUploadButton
             // 
             this.ImageUploadButton.Location = new System.Drawing.Point(654, 157);
             this.ImageUploadButton.Name = "ImageUploadButton";
             this.ImageUploadButton.Size = new System.Drawing.Size(75, 23);
-            this.ImageUploadButton.TabIndex = 21;
+            this.ImageUploadButton.TabIndex = 22;
             this.ImageUploadButton.Text = "Upload";
             this.ImageUploadButton.UseVisualStyleBackColor = true;
             this.ImageUploadButton.Click += new System.EventHandler(this.ImageUploadButton_Click);
@@ -235,7 +234,7 @@
             this.GenderComboBox.Location = new System.Drawing.Point(394, 204);
             this.GenderComboBox.Name = "GenderComboBox";
             this.GenderComboBox.Size = new System.Drawing.Size(183, 21);
-            this.GenderComboBox.TabIndex = 22;
+            this.GenderComboBox.TabIndex = 15;
             // 
             // ClassComboBox
             // 
@@ -243,7 +242,7 @@
             this.ClassComboBox.Location = new System.Drawing.Point(89, 245);
             this.ClassComboBox.Name = "ClassComboBox";
             this.ClassComboBox.Size = new System.Drawing.Size(183, 21);
-            this.ClassComboBox.TabIndex = 23;
+            this.ClassComboBox.TabIndex = 16;
             // 
             // SectionComboBox
             // 
@@ -251,7 +250,7 @@
             this.SectionComboBox.Location = new System.Drawing.Point(394, 254);
             this.SectionComboBox.Name = "SectionComboBox";
             this.SectionComboBox.Size = new System.Drawing.Size(183, 21);
-            this.SectionComboBox.TabIndex = 24;
+            this.SectionComboBox.TabIndex = 17;
             // 
             // ViewStudentDetails
             // 
