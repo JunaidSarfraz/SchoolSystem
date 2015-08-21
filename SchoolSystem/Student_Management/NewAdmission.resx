@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label37.Text" xml:space="preserve">
+    <value>We Declare that information provided by us is true. we have been fully informed about school curriculum, fee structure, premises
+rules and regulations. Moreover, we abide by all the rules and regulations of school during our child's stay at the School.</value>
+  </data>
 </root>
