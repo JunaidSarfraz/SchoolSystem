@@ -12,11 +12,16 @@ namespace SchoolSystem
 {
     public partial class Form1 : Form
     {
+        private void Form1Closed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
         static SchoolSystemEntities1 database = new SchoolSystemEntities1();
         public Form1()
         {
             this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.FormClosed += Form1Closed;
         }
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
