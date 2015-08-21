@@ -152,6 +152,5 @@ namespace SchoolSystem
         {
             this.ClassComboBox.Items.AddRange(database.Classes.Select(X => X.Name).ToArray());
         }
-
     }
 }
