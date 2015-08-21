@@ -12,7 +12,7 @@ namespace SchoolSystem
     using System;
     using System.Collections.Generic;
     
-    public partial class Class
+    public partial class Class : IComparable
     {
         public Class()
         {
@@ -26,5 +26,10 @@ namespace SchoolSystem
     
         public virtual ICollection<Course> Courses { get; set; }
         public virtual ICollection<Section> Sections { get; set; }
+
+        public int CompareTo(object obj)
+        {
+            return this.Name.CompareTo(((Class)obj).Name);
+        }
     }
 }
