@@ -86,6 +86,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StartAndLoginScreen\StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartAndLoginScreen\StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student_Management\AbsentReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     <Compile Include="WeeklyType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StartAndLoginScreen\StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student_Management\AbsentReport.resx">
       <DependentUpon>AbsentReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,6 +344,7 @@
   <ItemGroup>
     <None Include="no_Profile.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
