@@ -28,7 +28,7 @@ namespace SchoolSystem.StartAndLoginScreen
             String UserName = this.UserNameTextBox.Text;
             String Password = this.PasswordTextBox.Text;
 
-            if (database.Users.Where(X => X.UserName.Equals(UserName) && X.Password.Equals(Password)).First() == null)
+            if (database.Users.Where(X => X.UserName.Equals(UserName) && X.Password.Equals(Password)).Count() == 0)
             {
                 MessageBox.Show("Username or password is not correct");
             }
@@ -39,12 +39,69 @@ namespace SchoolSystem.StartAndLoginScreen
                 this.UserNameLabel.Visible = false;
                 this.PasswordLabel.Visible = false;
                 this.BtnLogin.Visible = false;
+                this.PasswordShowHide.Visible = false;
 
                 this.BtnAccountManagement.Visible = true;
                 this.BtnExamManagement.Visible = true;
                 this.BtnFeeManagement.Visible = true;
                 this.BtnHRManagement.Visible = true;
                 this.BtnStudentManagement.Visible = true;
+                this.Refresh();
+            }
+        }
+
+        private void BtnStudentManagement_Click(object sender, EventArgs e)
+        {
+            Form1 MainScreen = new Form1();
+            MainScreen.treeView1.SelectedNode = MainScreen.treeView1.Nodes[0];
+            this.Hide();
+            MainScreen.Show();
+        }
+
+        private void BtnFeeManagement_Click(object sender, EventArgs e)
+        {
+            Form1 MainScreen = new Form1();
+            MainScreen.treeView1.SelectedNode = MainScreen.treeView1.Nodes[1];
+            this.Hide();
+            MainScreen.Show();
+        }
+
+        private void BtnAccountManagement_Click(object sender, EventArgs e)
+        {
+            Form1 MainScreen = new Form1();
+            MainScreen.treeView1.SelectedNode = MainScreen.treeView1.Nodes[4];
+            this.Hide();
+            MainScreen.Show();
+        }
+
+        private void BtnExamManagement_Click(object sender, EventArgs e)
+        {
+            Form1 MainScreen = new Form1();
+            MainScreen.treeView1.SelectedNode = MainScreen.treeView1.Nodes[2];
+            this.Hide();
+            MainScreen.Show();
+        }
+
+        private void BtnHRManagement_Click(object sender, EventArgs e)
+        {
+            Form1 MainScreen = new Form1();
+            MainScreen.treeView1.SelectedNode = MainScreen.treeView1.Nodes[3];
+            this.Hide();
+            MainScreen.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (this.PasswordTextBox.PasswordChar == '*')
+            {
+                this.PasswordTextBox.PasswordChar = '\0';
+                this.PasswordShowHide.Text = "Hide Password";
+                this.Refresh();
+            }
+            else if (this.PasswordTextBox.PasswordChar == '\0')
+            {
+                this.PasswordTextBox.PasswordChar = '*';
+                this.PasswordShowHide.Text = "Hide Password";
                 this.Refresh();
             }
         }

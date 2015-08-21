@@ -38,46 +38,52 @@
             this.BtnExamManagement = new System.Windows.Forms.Button();
             this.BtnHRManagement = new System.Windows.Forms.Button();
             this.BtnAccountManagement = new System.Windows.Forms.Button();
+            this.PasswordShowHide = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // UserNameLabel
             // 
             this.UserNameLabel.AutoSize = true;
+            this.UserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLabel.Location = new System.Drawing.Point(155, 154);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.UserNameLabel.Size = new System.Drawing.Size(113, 25);
             this.UserNameLabel.TabIndex = 0;
             this.UserNameLabel.Text = "UserName";
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(155, 206);
+            this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.Location = new System.Drawing.Point(155, 207);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(53, 13);
+            this.PasswordLabel.Size = new System.Drawing.Size(106, 25);
             this.PasswordLabel.TabIndex = 1;
             this.PasswordLabel.Text = "Password";
             // 
             // UserNameTextBox
             // 
+            this.UserNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTextBox.Location = new System.Drawing.Point(281, 154);
             this.UserNameTextBox.Name = "UserNameTextBox";
-            this.UserNameTextBox.Size = new System.Drawing.Size(207, 20);
-            this.UserNameTextBox.TabIndex = 2;
+            this.UserNameTextBox.Size = new System.Drawing.Size(207, 30);
+            this.UserNameTextBox.TabIndex = 1;
             // 
             // PasswordTextBox
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(281, 199);
+            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextBox.Location = new System.Drawing.Point(281, 201);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(207, 20);
-            this.PasswordTextBox.TabIndex = 3;
+            this.PasswordTextBox.PasswordChar = '*';
+            this.PasswordTextBox.Size = new System.Drawing.Size(207, 30);
+            this.PasswordTextBox.TabIndex = 2;
             // 
             // BtnLogin
             // 
             this.BtnLogin.Location = new System.Drawing.Point(413, 248);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(75, 23);
-            this.BtnLogin.TabIndex = 4;
+            this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
@@ -90,6 +96,7 @@
             this.BtnStudentManagement.TabIndex = 5;
             this.BtnStudentManagement.Text = "Student Management";
             this.BtnStudentManagement.UseVisualStyleBackColor = true;
+            this.BtnStudentManagement.Click += new System.EventHandler(this.BtnStudentManagement_Click);
             // 
             // BtnFeeManagement
             // 
@@ -99,6 +106,7 @@
             this.BtnFeeManagement.TabIndex = 6;
             this.BtnFeeManagement.Text = "Fee Management";
             this.BtnFeeManagement.UseVisualStyleBackColor = true;
+            this.BtnFeeManagement.Click += new System.EventHandler(this.BtnFeeManagement_Click);
             // 
             // BtnExamManagement
             // 
@@ -108,6 +116,7 @@
             this.BtnExamManagement.TabIndex = 7;
             this.BtnExamManagement.Text = "Exam Managent";
             this.BtnExamManagement.UseVisualStyleBackColor = true;
+            this.BtnExamManagement.Click += new System.EventHandler(this.BtnExamManagement_Click);
             // 
             // BtnHRManagement
             // 
@@ -117,6 +126,7 @@
             this.BtnHRManagement.TabIndex = 8;
             this.BtnHRManagement.Text = "HR Management";
             this.BtnHRManagement.UseVisualStyleBackColor = true;
+            this.BtnHRManagement.Click += new System.EventHandler(this.BtnHRManagement_Click);
             // 
             // BtnAccountManagement
             // 
@@ -126,6 +136,18 @@
             this.BtnAccountManagement.TabIndex = 9;
             this.BtnAccountManagement.Text = "Account Management";
             this.BtnAccountManagement.UseVisualStyleBackColor = true;
+            this.BtnAccountManagement.Click += new System.EventHandler(this.BtnAccountManagement_Click);
+            // 
+            // PasswordShowHide
+            // 
+            this.PasswordShowHide.AutoSize = true;
+            this.PasswordShowHide.Location = new System.Drawing.Point(495, 217);
+            this.PasswordShowHide.Name = "PasswordShowHide";
+            this.PasswordShowHide.Size = new System.Drawing.Size(82, 13);
+            this.PasswordShowHide.TabIndex = 10;
+            this.PasswordShowHide.TabStop = true;
+            this.PasswordShowHide.Text = "Show password";
+            this.PasswordShowHide.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // StartScreen
             // 
@@ -133,6 +155,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(702, 430);
+            this.Controls.Add(this.PasswordShowHide);
             this.Controls.Add(this.BtnAccountManagement);
             this.Controls.Add(this.BtnHRManagement);
             this.Controls.Add(this.BtnExamManagement);
@@ -165,5 +188,6 @@
         public System.Windows.Forms.TextBox PasswordTextBox;
         public System.Windows.Forms.Label PasswordLabel;
         public System.Windows.Forms.Label UserNameLabel;
+        private System.Windows.Forms.LinkLabel PasswordShowHide;
     }
 }
