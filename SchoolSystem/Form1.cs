@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SchoolSystem.Exam_Management;
+using SchoolSystem.Fee_Management;
+using SchoolSystem.Staff_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -133,6 +136,186 @@ namespace SchoolSystem
             else if (treeView1.SelectedNode.Name.Equals("btn_Character_Certificate"))
             {
                 CharacterCertificate RequiredScreen = new CharacterCertificate();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Fee_Management"))
+            {
+                FeeManagementMainPage RequiredScreen = new FeeManagementMainPage();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Class_Wise_Fee_Structure"))
+            {
+                ClassWiseFeeStructure RequiredScreen = new ClassWiseFeeStructure();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Fee_Voucher"))
+            {
+                FeeVoucher RequiredScreen = new FeeVoucher();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Fee_Collection_Report"))
+            {
+                FeeCollectionReport RequiredScreen = new FeeCollectionReport();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Auto_Fee_Calculation"))
+            {
+                FeeCalculation RequiredScreen = new FeeCalculation();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Defaulter_List"))
+            {
+                DefaulterList RequiredScreen = new DefaulterList();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Concession_Report"))
+            {
+                ConcessionReport RequiredScreen = new ConcessionReport();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Customizable_Fee_Structure"))
+            {
+                FeeStructure RequiredScreen = new FeeStructure();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Student_Fee_History"))
+            {
+                StudentFeeHistory RequiredScreen = new StudentFeeHistory();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Income_Report"))
+            {
+                MonthlyIncomeReport RequiredScreen = new MonthlyIncomeReport();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Other_Fee_Support"))
+            {
+                OtherFeeSupport RequiredScreen = new OtherFeeSupport();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Fee_Change_System"))
+            {
+                FeeChangeSystem RequiredScreen = new FeeChangeSystem();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_SMS_To_Defaulters"))
+            {
+                SMSToDefaulters RequiredScreen = new SMSToDefaulters();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Exam_Management"))
+            {
+                ExamManagementMainPage RequiredScreen = new ExamManagementMainPage();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_ClassWise_Schedule"))
+            {
+                ClassWiseExamSchedule RequiredScreen = new ClassWiseExamSchedule();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_ClassWise_Result"))
+            {
+                ClassWiseResult RequiredScreen = new ClassWiseResult();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_ClassWise_Best_Student"))
+            {
+                ClassWIseBestStudent RequiredScreen = new ClassWIseBestStudent();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_TermWise_Result_Card"))
+            {
+                TermWiseResultCard RequiredScreen = new TermWiseResultCard();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Result_Card_Generation"))
+            {
+                OverallResultCard RequiredScreen = new OverallResultCard();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Progress_Report"))
+            {
+                ProgressReport RequiredScreen = new ProgressReport();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Overall_Result_Of_School"))
+            {
+                OverallResultOfSchool RequiredScreen = new OverallResultOfSchool();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_DateSheet_Of_Examination"))
+            {
+                DateSheet RequiredScreen = new DateSheet();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Staff_Management"))
+            {
+                StaffManagementMainPage RequiredScreen = new StaffManagementMainPage();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Staff_Attandance"))
+            {
+                StaffAttandance RequiredScreen = new StaffAttandance();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Staff_Registration"))
+            {
+                RegistrationForm RequiredScreen = new RegistrationForm();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Monthly_Attandance_Report"))
+            {
+                MonthlyAttandanceReport RequiredScreen = new MonthlyAttandanceReport();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Employee_Salary"))
+            {
+                EmployeeSalary RequiredScreen = new EmployeeSalary();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Staff_Salary_Sheet"))
+            {
+                StaffSalarySheet RequiredScreen = new StaffSalarySheet();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Experience_Certificate"))
+            {
+                ExperienceCertificate RequiredScreen = new ExperienceCertificate();
+                this.splitContainer1.Panel2.Controls.Clear();
+                this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
+            }
+            else if (treeView1.SelectedNode.Name.Equals("btn_Time_Table_Of_Employee"))
+            {
+                TimeTableOfEmployees RequiredScreen = new TimeTableOfEmployees();
                 this.splitContainer1.Panel2.Controls.Clear();
                 this.splitContainer1.Panel2.Controls.Add(RequiredScreen);
             }
