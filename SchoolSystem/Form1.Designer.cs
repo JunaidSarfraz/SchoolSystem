@@ -137,7 +137,7 @@
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.splitContainer1.Size = new System.Drawing.Size(873, 711);
-            this.splitContainer1.SplitterDistance = 270;
+            this.splitContainer1.SplitterDistance = 219;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -244,7 +244,7 @@
             treeNode31,
             treeNode39,
             treeNode44});
-            this.treeView1.Size = new System.Drawing.Size(200, 711);
+            this.treeView1.Size = new System.Drawing.Size(219, 711);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 

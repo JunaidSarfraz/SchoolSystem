@@ -182,7 +182,7 @@
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLabel.Location = new System.Drawing.Point(0, 293);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(625, 23);
+            this.NameLabel.Size = new System.Drawing.Size(644, 23);
             this.NameLabel.TabIndex = 3;
             this.NameLabel.Text = "Student Information";
             // 
@@ -344,7 +344,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(0, 465);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(625, 23);
+            this.label11.Size = new System.Drawing.Size(644, 23);
             this.label11.TabIndex = 22;
             this.label11.Text = "Parents Information";
             // 
@@ -551,7 +551,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(0, 741);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(625, 23);
+            this.label23.Size = new System.Drawing.Size(644, 23);
             this.label23.TabIndex = 47;
             this.label23.Text = "Contact Address";
             // 
@@ -652,7 +652,7 @@
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(0, 944);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(625, 23);
+            this.label28.Size = new System.Drawing.Size(644, 23);
             this.label28.TabIndex = 59;
             this.label28.Text = "Personality and Health";
             // 
@@ -760,7 +760,7 @@
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(0, 1087);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(625, 23);
+            this.label35.Size = new System.Drawing.Size(644, 23);
             this.label35.TabIndex = 72;
             this.label35.Text = "Documents Required at the time of Admission";
             // 
@@ -784,7 +784,7 @@
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(0, 1203);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(625, 23);
+            this.label36.Size = new System.Drawing.Size(644, 23);
             this.label36.TabIndex = 74;
             this.label36.Text = "Information Rules and Regulations";
             // 
@@ -835,7 +835,7 @@
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(0, 1319);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(625, 23);
+            this.label40.Size = new System.Drawing.Size(644, 23);
             this.label40.TabIndex = 80;
             this.label40.Text = "For Official Use Only";
             // 
@@ -864,7 +864,7 @@
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.Location = new System.Drawing.Point(0, 1389);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(625, 23);
+            this.label42.Size = new System.Drawing.Size(644, 23);
             this.label42.TabIndex = 84;
             this.label42.Text = "Decision";
             // 
@@ -1168,7 +1168,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NewAdmission";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(625, 1715);
+            this.Size = new System.Drawing.Size(647, 1715);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
