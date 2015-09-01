@@ -135,6 +135,7 @@
             this.AdmissionTestDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.AdmissionTestFailRadioButton = new System.Windows.Forms.RadioButton();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -236,6 +237,7 @@
             this.ClassComboBox.Name = "ClassComboBox";
             this.ClassComboBox.Size = new System.Drawing.Size(89, 21);
             this.ClassComboBox.TabIndex = 3;
+            this.ClassComboBox.SelectedIndexChanged += new System.EventHandler(this.ClassComboBox_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -1055,11 +1057,22 @@
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(197, 1643);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 32);
+            this.button1.TabIndex = 103;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // NewAdmission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.AdmissionTestDateTimePicker);
             this.Controls.Add(this.label50);
@@ -1169,6 +1182,7 @@
             this.Name = "NewAdmission";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Size = new System.Drawing.Size(647, 1715);
+            this.Load += new System.EventHandler(this.NewAdmission_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -1284,6 +1298,7 @@
         private System.Windows.Forms.DateTimePicker AdmissionTestDateTimePicker;
         private System.Windows.Forms.RadioButton AdmissionTestFailRadioButton;
         private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.Button button1;
 
     }
 }

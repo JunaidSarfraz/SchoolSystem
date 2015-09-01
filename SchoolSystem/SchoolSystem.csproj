@@ -86,6 +86,204 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounts_Management\BalanceSheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts_Management\BalanceSheet.Designer.cs">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts_Management\Expenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts_Management\Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts_Management\Income.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts_Management\Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\ClassWIseBestStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\ClassWIseBestStudent.Designer.cs">
+      <DependentUpon>ClassWIseBestStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\ClassWiseExamSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\ClassWiseExamSchedule.Designer.cs">
+      <DependentUpon>ClassWiseExamSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\ClassWiseResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\ClassWiseResult.Designer.cs">
+      <DependentUpon>ClassWiseResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\DateSheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\DateSheet.Designer.cs">
+      <DependentUpon>DateSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\ExamManagementMainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\ExamManagementMainPage.Designer.cs">
+      <DependentUpon>ExamManagementMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\OverallResultCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\OverallResultCard.Designer.cs">
+      <DependentUpon>OverallResultCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\OverallResultOfSchool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\OverallResultOfSchool.Designer.cs">
+      <DependentUpon>OverallResultOfSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\ProgressReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\ProgressReport.Designer.cs">
+      <DependentUpon>ProgressReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Management\TermWiseResultCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exam_Management\TermWiseResultCard.Designer.cs">
+      <DependentUpon>TermWiseResultCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\ClassWiseFeeStructure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\ClassWiseFeeStructure.Designer.cs">
+      <DependentUpon>ClassWiseFeeStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\ConcessionReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\ConcessionReport.Designer.cs">
+      <DependentUpon>ConcessionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\DefaulterList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\DefaulterList.Designer.cs">
+      <DependentUpon>DefaulterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\FeeCalculation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\FeeCalculation.Designer.cs">
+      <DependentUpon>FeeCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\FeeChangeSystem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\FeeChangeSystem.Designer.cs">
+      <DependentUpon>FeeChangeSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\FeeCollectionReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\FeeCollectionReport.Designer.cs">
+      <DependentUpon>FeeCollectionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\FeeManagementMainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\FeeManagementMainPage.Designer.cs">
+      <DependentUpon>FeeManagementMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\FeeStructure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\FeeStructure.Designer.cs">
+      <DependentUpon>FeeStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\FeeVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\FeeVoucher.Designer.cs">
+      <DependentUpon>FeeVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\MonthlyIncomeReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\MonthlyIncomeReport.Designer.cs">
+      <DependentUpon>MonthlyIncomeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\OtherFeeSupport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\OtherFeeSupport.Designer.cs">
+      <DependentUpon>OtherFeeSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\SMSToDefaulters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\SMSToDefaulters.Designer.cs">
+      <DependentUpon>SMSToDefaulters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Management\StudentFeeHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fee_Management\StudentFeeHistory.Designer.cs">
+      <DependentUpon>StudentFeeHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\EmployeeSalary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\EmployeeSalary.Designer.cs">
+      <DependentUpon>EmployeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\ExperienceCertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\ExperienceCertificate.Designer.cs">
+      <DependentUpon>ExperienceCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\MonthlyAttandanceReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\MonthlyAttandanceReport.Designer.cs">
+      <DependentUpon>MonthlyAttandanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\RegistrationForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\StaffAttandance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\StaffAttandance.Designer.cs">
+      <DependentUpon>StaffAttandance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\StaffManagementMainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\StaffManagementMainPage.Designer.cs">
+      <DependentUpon>StaffManagementMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\StaffSalarySheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\StaffSalarySheet.Designer.cs">
+      <DependentUpon>StaffSalarySheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Management\TimeTableOfEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Management\TimeTableOfEmployees.Designer.cs">
+      <DependentUpon>TimeTableOfEmployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartAndLoginScreen\StartScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +438,21 @@
     <Compile Include="WeeklyType.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Exam_Management\ExamManagementMainPage.resx">
+      <DependentUpon>ExamManagementMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_Management\ClassWiseFeeStructure.resx">
+      <DependentUpon>ClassWiseFeeStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_Management\FeeCalculation.resx">
+      <DependentUpon>FeeCalculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_Management\FeeManagementMainPage.resx">
+      <DependentUpon>FeeManagementMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Management\StaffManagementMainPage.resx">
+      <DependentUpon>StaffManagementMainPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartAndLoginScreen\StartScreen.resx">
       <DependentUpon>StartScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,7 +524,9 @@
     <None Include="SchoolSystem_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

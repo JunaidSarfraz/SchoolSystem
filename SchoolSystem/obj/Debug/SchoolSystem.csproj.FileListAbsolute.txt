@@ -28,3 +28,36 @@ C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\Schoo
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.exe.manifest
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.application
 C:\Users\Junaid Sarfraz\documents\visual studio 2013\Projects\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.ViewStudentDetails.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\SchoolSystem.exe.config
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.exe
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.pdb
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.csprojResolveAssemblyReference.cache
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.StartAndLoginScreen.StartScreen.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.AbsentReport.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.AttandanceScreen.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.CharacterCertificate.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.ClassWiseStrength.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Form1.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.leftStudentsDetail.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.NewAdmission.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Properties.Resources.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.SchoolLeavingCertificate.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.SearchStudent.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.StudentContacts.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.ViewStudentDetails.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.csproj.GenerateResource.Cache
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Exam_Management.ExamManagementMainPage.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Fee_Management.ClassWiseFeeStructure.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Fee_Management.FeeCalculation.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Fee_Management.FeeManagementMainPage.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.Staff_Management.StaffManagementMainPage.resources
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\SchoolSystem.exe.manifest
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\SchoolSystem.application
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\SchoolSystem.exe
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\SchoolSystem.pdb
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.dll
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.SqlServer.dll
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.xml
+E:\SchoolSystem\SchoolSystem\SchoolSystem\bin\Debug\EntityFramework.SqlServer.xml
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.exe.manifest
+E:\SchoolSystem\SchoolSystem\SchoolSystem\obj\Debug\SchoolSystem.application

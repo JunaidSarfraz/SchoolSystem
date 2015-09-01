@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SchoolSystem.exe" size="138224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SchoolSystem.exe" size="181232">
       <assemblyIdentity name="SchoolSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Rl4ApyqUDyP73srJUJAyS//bbiU=</dsig:DigestValue>
+        <dsig:DigestValue>QKMNJtmJRTOVArfqwg8IxkXPWu0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -83,7 +83,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>BqnsRwszcSgNd6Z2JqMnU9e15u8=</dsig:DigestValue>
+      <dsig:DigestValue>xo5y44VYFlfjgf6TC4F/wCs19g4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
